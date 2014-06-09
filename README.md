@@ -20,9 +20,9 @@ pip install Flask
 # How to run
 Type in the following commands to get up and running:
 
-'''bash
+```bash
 git clone https://github.com/OSURoboticsClub/Website && cd Website
 python main.py
-'''
+```
 
 Then visit http://localhost:5000
