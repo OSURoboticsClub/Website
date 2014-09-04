@@ -163,3 +163,20 @@ ul.projSub li a:hover {
 color: #d85a1a;
 }
 
+.section {
+padding: 20px 0 20px 0px;
+margin-bottom: 20px;
+clear: both !important;
+}
+
+.section h1 {
+width: 100%;
+margin-left: -100%; 
+padding-left: 100%;
+margin-bottom: 20px;
+background-color: transparent !important;
+background-image: url('../images/headerbg.png');
+background-repeat: no-repeat;
+background-position: right center;
+}
+

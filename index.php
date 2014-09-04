@@ -28,4 +28,15 @@ Template Name: Home Page
       ?>
     </div>
   </div>
+</div>
+<div class="contMain">
+  <div class="main">
+    <div class="left" style="margin:0px 0 0 0;">
+      <div class="section">
+        <h1 style="width: 150%; margin-left: -50%; padding-left: 50%;">Featured Projects:</h1>
+        <div class="sectThree" id="aerial"><p>The Autonomous Aerial team was formed in 2009 and competes in the International Aerial Robotics Competition. For the 2013 competition, the vehicle must navigate through a building, remove a flash drive from a table, and replace it with a new one. </p><a href="http://groups.engr.oregonstate.edu/osurc/aerial/">Visit here for more</a>.</div><div class="sectThree" id="mars"><p>The Mars Rover team has competed in the University Rover Challenge since 2008, when they took first place. The teleoperated rover must perform a variety of tasks, including locating bacteria, locating a distressed astronaut, and manipulating a control panel. </p><a href="http://www.osumarsrover.com">Visit here for more</a>.</div><div class="sectThree" id="water"><p>OSURC is participating for the first time in an autonomous underwater vehicle competition in San Diego this summer. The team is designing a small underwater robot to navigate a course of buoys, pipes, and hydrophcurrents. Some of the subsystems include underwater acoustics, propulsion, cameras, and pressure vessels.</p><a href="http://groups.engr.oregonstate.edu/osurc/underwater/">Visit here for more</a>.</div>
+      </div>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>
