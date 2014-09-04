@@ -32,6 +32,10 @@ font-family:'Soho';
 src:url('fonts/sohomedium.otf') format("opentype");
 }
 
+img.border {
+border: 5px solid #e1e1dc;
+}
+
 
 /* ==================== TYPOGRAPHY ==================== */
 
