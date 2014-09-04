@@ -1,5 +1,4 @@
-{% extends "layout.html" %}
-{% block body %}
+<?php get_header(); ?>
   <div class="row">
     <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="static/images/tyler.jpg"></div>
     <div class="col-md-5 col-md-push-1">
@@ -27,4 +26,4 @@
       <p style="padding-left: 30px;"><a href="https://secure.engr.oregonstate.edu/mailman/listinfo/osurcmembers">osurcmembers@engr.orst.edu</a> -- Join this list if you are or want to become a member. Only officers are authorized to post information to the members list (in order to minimize unnecessary list traffic.)</p>
       <p style="padding-left: 30px;"><a href="https://secure.engr.oregonstate.edu/mailman/listinfo/osurcofficers">osurcofficers@engr.orst.edu</a> -- Send an email to this list if you have a question about the club or want to get some information distributed to all members.</p>
     </div>
-{% endblock %}
+<?php get_footer(); ?>
