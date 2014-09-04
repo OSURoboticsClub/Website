@@ -36,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+          <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav" id="robot-nav">

@@ -1,16 +1,16 @@
 /*
- * Theme Name:OSURC 
- * Theme URI: 
- * Author: John Zeller 
- * Author URI: http://www.johnzeller.com 
- * Description: A wordpress theme for the OSU Robotics Club! 
- * Version: 0.1 
- * License: GNU General Public License v2 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Tags: 
- * Text Domain: OSURC 
- *
- * */
+ *  * Theme Name:OSURC 
+ *   * Theme URI: 
+ *    * Author: John Zeller 
+ *     * Author URI: http://www.johnzeller.com 
+ *      * Description: A wordpress theme for the OSU Robotics Club! 
+ *       * Version: 0.1 
+ *        * License: GNU General Public License v2 or later
+ *         * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *          * Tags: 
+ *           * Text Domain: OSURC 
+ *            *
+ *             * */
 
 html{
   min-height: 100%;
@@ -19,7 +19,7 @@ html{
 
 body {
   height: 100%;
-  background-image: url('../images/mainBG2.png');
+  background-image: url('images/mainBG2.png');
   background-repeat: repeat;
   padding-top: 50px;
   color: #E5E5E0 !important;
@@ -52,7 +52,7 @@ font-family: "Gill Sans","Gill Sans MT",helvetica,arial,sans-serif;
 }
 
 ul#robot-nav li a.general {
-background-image:url("../images/navimg.png");
+background-image:url("images/navimg.png");
 display:inline;
 float:left;
 height:59px;
@@ -150,3 +150,4 @@ color: #1F1F1F;
 ul.projSub li a:hover {
 color: #d85a1a;
 }
+
