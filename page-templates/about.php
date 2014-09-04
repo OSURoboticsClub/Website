@@ -37,7 +37,8 @@ get_header(); ?>
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/nick.jpg" class="border" style="" alt="Nick">
 					<br>
 					<a href="mailto:mccombn@onid.oregonstate.edu">Nick McComb</a><br>
-					Vice President<br>Web Developer<br>
+					Vice President <br>
+					<span style="font-size:.9em;text-align:center;">Web Developer</span>
 				</td>
 				<td>
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/corwin.jpg" class="border" style="" alt="Corwin">
