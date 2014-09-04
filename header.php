@@ -40,7 +40,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav" id="robot-nav">
-            <li class="active"><a class="general home" href="">Home</a></li>
+            <li class="active"><a class="general home" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
             <li class="dropdown">
               <a data-toggle="dropdown" class="general about dropdown-toggle" href="about">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
