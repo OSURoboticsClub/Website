@@ -24,15 +24,15 @@
 		            </div>
 		        
 		            <div class="sectThree">
-		                <h3 style="margin-bottom: 20px;">Join Our Mailing List</h3>
-		                <ul>
+		                <h3>Join Our Mailing List</h3>
+		                <ul style="margin-top: 20px;">
 		                    <li>If you would like to join our mailing list, go <a href="https://secure.engr.oregonstate.edu/mailman/listinfo/osurcmembers">here</a>.</li>
 		                </ul>
 		            </div>
 		            
 		            <div class="sectThree">
 		                <h3 style="margin-bottom: 20px;">Meeting Dates</h3>
-		                <ul>
+		                <ul style="margin-top: 20px;">
 		                    Meeting times to be announced.
 		                </ul>
 		            </div>
