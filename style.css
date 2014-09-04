@@ -163,3 +163,105 @@ ul.projSub li a:hover {
 color: #d85a1a;
 }
 
+h1 {
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 72px;
+font-weight: 700;
+line-height:1em;
+color: #e1e1dc;
+padding: 20px 0 25px 0;
+margin-bottom: 10px;
+background-color: #d85a1a;
+}
+
+.contMain {
+/* width: 100%; Nick: Removed because of weird spacing */
+background-image: url("../images/mainBG2.png");
+background-repeat: repeat;
+/* Russeree: added 15px padding to sides */ 
+padding: 15px;
+}
+
+.main {
+width:960px;
+margin: 0 auto;
+}
+
+.section {
+padding: 20px 0 20px 0px;
+margin-bottom: 20px;
+clear: both !important;
+}
+
+.section h1 {
+width: 100%;
+margin-left: -100%; 
+padding-left: 100%;
+margin-bottom: 20px;
+background-color: transparent !important;
+background-image: url('../images/headerbg.png');
+background-repeat: no-repeat;
+background-position: right center;
+}
+
+
+.sectThree {
+width:270px;
+float: left;
+margin-right:40px;
+margin-bottom: 200px;
+}
+
+
+.sectThree p {
+margin-top: 210px;
+max-width: 255px;
+}
+
+#mars {
+background-image:url("../images/mars.png");
+background-repeat: no-repeat;
+background-position:0px -199px;
+float:left;
+height:200px;
+padding:0 0 20px 0;
+width:255px;
+}
+
+#mars:hover, #mars:focus {
+background-position:0 0;
+}
+
+#aerial {
+background-image:url("../images/aerial.png");
+background-repeat: no-repeat;
+background-position:0px -199px;
+float:left;
+height:200px;
+padding:0;
+width:255px;
+}
+
+#aerial:hover, #aerial:focus {
+background-position:0 -1px;
+}
+
+#water {
+background-image:url("../images/water.png");
+background-repeat: no-repeat;
+background-position:0 -199px;
+float:left;
+height:200px;
+/* Russeree: larger pad on bot */
+padding-bottom: 50px;
+width:275px;
+/* Russeree: Webkit Transitions */
+transition:background-position .0s;
+-webkit-transition:background-position .0s; /* Safari */
+}
+
+#water:hover, #water:focus {
+background-position:0px -02px;
+}
+
+
