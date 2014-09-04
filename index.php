@@ -1,9 +1,9 @@
 <?php get_header(); ?>
   <div class="row">
-    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="static/images/tyler.jpg"></div>
+    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="images/tyler.jpg"></div>
     <div class="col-md-5 col-md-push-1">
       <p>
-        <img src="static/images/welcome.png"><br><br>
+        <img src="images/welcome.png"><br><br>
         The purpose of the OSU Robotics Club is to empower ambitious students with resources to build robots for fun and competition, remove barriers from entry into robotics, create a path to success, and form a pipeline of engineering leaders.
         <br><br>
         We welcome students of all majors and engineering disciplines. Our members participate in international competitions against university and professional teams.
