@@ -63,7 +63,6 @@ get_header(); ?>
 			</tr>
 			</tbody>
 		</table>
-		<?php get_sidebar( 'about-page-officers' ); ?>
 	</div>
   </div>
 
