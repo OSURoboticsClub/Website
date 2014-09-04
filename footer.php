@@ -1,4 +1,5 @@
     </div><!-- /.container -->
+    <div style="margin-bottom: 100px;"></div>
 	<div style="background-color: rgb(226, 226, 222); border-top: 10px solid rgb(216, 90, 26); margin: 0px auto -155px;" class="navbar navbar-bottom" role="navigation">
 	      <div class="container">
 			<div class="contFooter">
@@ -23,14 +24,14 @@
 		            </div>
 		        
 		            <div class="sectThree">
-		                <h3>Join Our Mailing List</h3>
+		                <h3 style="margin-bottom: 20px;">Join Our Mailing List</h3>
 		                <ul>
 		                    <li>If you would like to join our mailing list, go <a href="https://secure.engr.oregonstate.edu/mailman/listinfo/osurcmembers">here</a>.</li>
 		                </ul>
 		            </div>
 		            
 		            <div class="sectThree">
-		                <h3>Meeting Dates</h3>
+		                <h3 style="margin-bottom: 20px;">Meeting Dates</h3>
 		                <ul>
 		                    Meeting times to be announced.
 		                </ul>
