@@ -176,7 +176,7 @@ background-color: #d85a1a;
 
 .contMain {
 /* width: 100%; Nick: Removed because of weird spacing */
-background-image: url("../images/mainBG2.png");
+background-image: url("images/mainBG2.png");
 background-repeat: repeat;
 /* Russeree: added 15px padding to sides */ 
 padding: 15px;
@@ -199,7 +199,7 @@ margin-left: -100%;
 padding-left: 100%;
 margin-bottom: 20px;
 background-color: transparent !important;
-background-image: url('../images/headerbg.png');
+background-image: url('images/headerbg.png');
 background-repeat: no-repeat;
 background-position: right center;
 }
@@ -219,7 +219,7 @@ max-width: 255px;
 }
 
 #mars {
-background-image:url("../images/mars.png");
+background-image:url("images/mars.png");
 background-repeat: no-repeat;
 background-position:0px -199px;
 float:left;
@@ -233,7 +233,7 @@ background-position:0 0;
 }
 
 #aerial {
-background-image:url("../images/aerial.png");
+background-image:url("images/aerial.png");
 background-repeat: no-repeat;
 background-position:0px -199px;
 float:left;
@@ -247,7 +247,7 @@ background-position:0 -1px;
 }
 
 #water {
-background-image:url("../images/water.png");
+background-image:url("images/water.png");
 background-repeat: no-repeat;
 background-position:0 -199px;
 float:left;
