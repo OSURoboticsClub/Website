@@ -6,13 +6,11 @@
 function wpb_widgets_init() {
 
 	register_sidebar( array(
-		'name' => __( 'Sample Widget', 'wpb' ),
-		'id' => 'sample-widget',
-		'description' => __( 'This is a sample widget', 'wpb' ),
+		'name' => __( 'About Page Officers Widget', 'wpb' ),
+		'id' => 'about-page-officers',
+		'description' => __( 'This is a the About page officers widget', 'wpb' ),
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h1>',
-		'after_title' => '</h1>',
 	) );
 	}
 
