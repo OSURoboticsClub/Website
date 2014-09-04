@@ -24,7 +24,47 @@ get_header(); ?>
 			?>
 		</p>
     </div>
-    <div class="col-md-5 col-md-push-1"><?php get_sidebar( 'about-page-officers' ); ?></div>
+    <div class="col-md-5 col-md-push-1">
+    	<table class="officersTable" style="" cellpadding="10">
+			<tbody><tr>
+				<td>
+					<img src="images/billy.jpg" class="border" style="" alt="Billy">
+					<br>
+					<a href="mailto:rycoske@gmail.com">Billy Edwards</a><br>
+					President
+				</td>
+				<td>
+					<img src="images/nick.jpg" class="border" style="" alt="Nick">
+					<br>
+					<a href="mailto:mccombn@onid.oregonstate.edu">Nick McComb</a><br>
+					Vice President <br>
+					<span style="font-size:.9em;text-align:center;">Web Developer</span>
+				</td>
+				<td>
+					<img src="images/corwin.jpg" class="border" style="" alt="Corwin">
+					<br>
+					<a href="mailto:caperren@gmail.com">Corwin Perren</a><br>
+					Treasurer
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/question.jpg" class="border" style="" alt="John">
+					<br>
+					<a href="mailto:johnlzeller@gmail.com">John Zeller</a><br> 
+					Secretary
+				</td>
+				<td>
+					<img src="images/question.jpg" class="border" style="" alt="Nathan">
+					<br>
+					<a href="mailto:brahmstn@onid.oregonstate.edu">Nathan Brahmstad</a><br> 
+					Hardware Developer
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		<?php get_sidebar( 'about-page-officers' ); ?>
+	</div>
   </div>
 
 <?php
