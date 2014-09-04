@@ -12,6 +12,9 @@
     <!-- Bootstrap core CSS -->
     <link href="<?php echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Styles from the previously designed OSURC website -->
+    <link href="<?php echo get_stylesheet_directory_uri() ?>/css/osurc.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="<?php echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet">
 
