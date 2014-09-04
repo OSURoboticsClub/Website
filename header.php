@@ -42,7 +42,7 @@
           <ul class="nav navbar-nav" id="robot-nav">
             <li class="active"><a class="general home" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
             <li class="dropdown">
-              <a data-toggle="dropdown" class="general about dropdown-toggle" href="about">About <b class="caret"></b></a>
+              <a data-toggle="dropdown" class="general about dropdown-toggle disabled" href="about">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="jobs">Job Postings</a></li>
                 <li><a href="resources">Resources</a></li>
@@ -52,7 +52,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a data-toggle="dropdown" class="general general projects" href="projects">Projects <b class="caret"></b></a>
+              <a data-toggle="dropdown" class="general general projects disabled" href="projects">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="mars">Mars Rover</a></li>
                 <li><a href="aerial">Autonomous Aerial</a></li>
