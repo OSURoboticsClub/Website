@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Underwater Page
+ * Template Name: Project Page
  */
 
 get_header(); ?>
