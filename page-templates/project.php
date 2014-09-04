@@ -12,7 +12,7 @@ Template Name: Project Page
         </div>
       </div>
     </div>
-    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="<?php echo get_stylesheet_directory_uri() ?>/images/mars.png"></div>
+    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="<?php echo get_stylesheet_directory_uri() ?>/images/marsrover.png"></div>
     <div class="col-md-5 col-md-push-1">
       <p>
 	      <?php
