@@ -34,11 +34,10 @@ get_header(); ?>
 					President
 				</td>
 				<td>
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/nick.jpg" class="border" style="padding-top: 11px;" alt="Nick">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/nick.jpg" class="border" style="" alt="Nick">
 					<br>
 					<a href="mailto:mccombn@onid.oregonstate.edu">Nick McComb</a><br>
-					Vice President <br>
-					<span style="font-size:.9em;text-align:center;">Web Developer</span>
+					Vice President / Web Developer<br>
 				</td>
 				<td>
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/corwin.jpg" class="border" style="" alt="Corwin">
