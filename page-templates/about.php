@@ -6,7 +6,7 @@
 get_header(); ?>
 
   <div class="row">
-    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="<?php echo get_stylesheet_directory_uri() ?>/images/keypeople.jpg"></div>
+    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="<?php echo get_stylesheet_directory_uri() ?>/images/keypeople.png"></div>
     <div class="col-md-5 col-md-push-1">
       <p>
 		<?php
