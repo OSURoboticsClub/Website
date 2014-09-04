@@ -1,0 +1,633 @@
+/*
+* Oregon State University Robotics Club
+* Website design by Rodney Keeling
+* Copyright 2010 Oregon State University Robotics Club
+* 
+* DO NOT EDIT UNLESS YOU ARE A CSS WHIZ AND YOU KNOW WHAT YOU'RE DOING! :O
+* AND KEEP THIS FILE CLEAN AND COMMENTED!
+* 
+*/
+
+
+/*
+* COLORS:
+* Orange:     #d85a1a
+* Light Grey: #E1E1DC
+* Dark Grey:  #1F1F1E
+*/
+
+/*
+ * TODO:
+ * -FIX IE FONTS! ASAP!
+ * -Add borders and padding
+ * -Space between footer and teams
+ */
+
+/************************************************************
+* 
+* CSS RESET
+* 
+************************************************************/
+
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, 
+td {
+margin: 0;
+padding: 0px;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+body {
+line-height: 1;
+margin: 10px;
+}
+ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+text-decoration: none;
+}
+del {
+text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/************************************************************
+* 
+* END CSS RESET
+* 
+************************************************************/
+
+/************************************************************
+* 
+* GLOBAL STYLES
+* 
+************************************************************/
+
+@font-face {
+font-family:'Soho';
+src:url('../fonts/sohomedium.otf') format("opentype");
+}
+
+body {
+background-image: url("../images/mainBG2.png");
+background-repeat: repeat;
+background-color:#000000;
+border-top:10px solid #d85a1a;
+color:#e1e1dc;
+font-family:"Gill Sans","Gill Sans MT",helvetica,arial,sans-serif;
+font-size:14px;
+letter-spacing:0.01em;
+line-height:1.4em;
+margin: 0 auto;
+width: 100%;
+min-width: 1100px;
+}
+
+.content {
+width: 100%;
+margin: 0 auto;
+}
+
+/*
+Removed 650 Max width for all images on the site. I don't know why that was put on here, not a very good way to reduce the images. Stern warning ignored for the purpose of a gallery (which is supposed to have big images?).
+
+Original warning: "DON'T EVEN THINK ABOUT PUTTING HUGE IMAGES ON THIS WEBSITE"/
+Change made 1/19/2014 by Nick McComb
+*/
+img {
+/*max-width: 650px !important;*/
+outline: none;
+}
+
+img.border {
+border: 5px solid #e1e1dc;
+}
+
+a {
+color: #d85a1a;
+text-decoration: none;
+}
+
+a:hover {
+color: #E1E1DC;
+}
+
+p {
+margin-bottom: 1em;
+float: left;
+}
+
+h1 {
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 72px;
+font-weight: 700;
+line-height:1em;
+color: #e1e1dc;
+padding: 20px 0 25px 0;
+margin-bottom: 10px;
+background-color: #d85a1a;
+}
+
+h2 {
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 48px;
+color: #e1e1dc;
+line-height:1em;
+}
+
+h3 {
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 24px;
+line-height:1em;
+color: #e1e1dc;
+margin-bottom:10px;
+}
+
+h4 {
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 18px;
+line-height:1em;
+color: #e1e1dc;
+}
+
+/************************************************************
+* 
+* END GLOBAL STYLES
+* 
+************************************************************/
+
+
+
+/************************************************************
+* 
+* NAVIGATION/HEADER STYLES
+* 
+************************************************************/
+
+.contHead {
+width: 100%;
+min-width:1100px;
+background-image: url("../images/headBG2.png");
+background-position: center center;
+background-repeat: repeat-x;
+}
+
+.head {
+height: 142px;
+padding: 0 0 0 10px;
+clear: both;
+width: 1050px;
+margin: 0 auto;
+}
+
+img#logo {
+padding: 37px 5px 0 0;
+float: left;
+}
+
+ul#nav {
+display:inline !important;
+list-style:none;
+position: relative;
+width:665px;
+float: left;
+padding: 50px 0 50px 30px;
+}
+
+ul#nav li {
+display:inline;
+}
+
+ul#nav li a {
+background-image:url("../images/navimg.png");
+display:inline;
+float:left;
+height:59px;
+margin:0 10px 0 10px;
+padding:0 0 6px 0;
+text-indent:-9999px;
+width:59px;
+}
+
+ul#nav li a.home {
+background-position:0px -1px;
+width:59px;
+}
+
+ul#nav li a.about {
+background-position:-61px -1px;
+width:59px;
+}
+
+ul#nav li a.projects {
+background-position:-125px -1px;
+width:69px;
+}
+
+ul#nav li a.comps {
+background-position:-200px -1px;
+width:115px;
+}
+
+ul#nav li a.gal {
+background-position:-320px -1px;
+width:65px;
+}
+
+ul#nav li a.res {
+background-position:-475px -1px;
+width:85px;
+}
+
+ul#nav li a.contact {
+background-position:-395px -1px;
+width:72px;
+}
+
+ul#nav li a.home:hover, ul#nav li a.home:focus {
+background-position:0px -65px;
+}
+
+ul#nav li a.about:hover, ul#nav li a.about:focus {
+background-position:-61px -65px;
+}
+
+ul#nav li a.projects:hover, ul#nav li a.projects:focus {
+background-position:-125px -65px;
+}
+
+ul#nav li a.comps:hover, ul#nav li a.comps:focus {
+background-position:-200px -65px;
+}
+
+ul#nav li a.gal:hover, ul#nav li a.gal:focus {
+background-position:-320px -65px;
+}
+
+ul#nav li a.res:hover, ul#nav li a.res:focus {
+background-position:-475px -65px;
+}
+
+ul#nav li a.contact:hover, ul#nav li a.contact:focus {
+background-position:-395px -65px;
+}
+
+ul.projSub {
+width:600px;
+height: 30px;
+}
+
+ul.projSub li {
+display: inline;
+margin-right: 20px;
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 14px;
+line-height:1em;
+color: #1F1F1F;
+}
+
+ul.projSub li a {
+color: #1F1F1F;
+}
+
+ul.projSub li a:hover {
+color: #d85a1a;
+}
+
+
+/************************************************************
+* 
+* END NAVIGATION/HEADER STYLES
+* 
+************************************************************/
+
+
+
+/************************************************************
+* 
+* MAIN BODY STYLES
+* 
+************************************************************/
+
+
+.contMain {
+/* width: 100%; Nick: Removed because of weird spacing */
+background-image: url("../images/mainBG2.png");
+background-repeat: repeat;
+/* Russeree: added 15px padding to sides */ 
+padding: 15px;
+}
+
+.main {
+width:960px;
+margin: 0 auto;
+}
+
+.section {
+padding: 20px 0 20px 0px;
+margin-bottom: 20px;
+clear: both !important;
+}
+
+.section img {
+float: left;
+margin-right: 20px;
+margin-bottom: 15px;
+}
+
+.section p {
+float: left;
+width: 350px;
+max-width: 375px;
+}
+
+.section h1 {
+width: 100%;
+margin-left: -100%; 
+padding-left: 100%;
+margin-bottom: 20px;
+background-color: transparent !important;
+background-image: url('../images/headerbg.png');
+background-repeat: no-repeat;
+background-position: right center;
+}
+
+.sectThree {
+width:270px;
+float: left;
+margin-right:40px;
+margin-bottom: 200px;
+}
+
+
+.sectThree p {
+margin-top: 210px;
+max-width: 255px;
+}
+
+#mars {
+background-image:url("../images/mars.png");
+background-repeat: no-repeat;
+background-position:0px -199px;
+float:left;
+height:200px;
+padding:0 0 20px 0;
+width:255px;
+}
+
+#mars:hover, #mars:focus {
+background-position:0 0;
+}
+
+#telepresence {
+background-image:url("../images/telepresence.png");
+background-repeat: no-repeat;
+background-position:0px -190px;
+float:left;
+height:200px;
+padding:0 0 20px 0;
+width:275px;
+}
+
+#telepresence:hover, #telepresence:focus {
+background-position:0 9px;
+}
+
+#aerial {
+background-image:url("../images/aerial.png");
+background-repeat: no-repeat;
+background-position:0px -199px;
+float:left;
+height:200px;
+padding:0;
+width:255px;
+}
+
+#aerial:hover, #aerial:focus {
+background-position:0 -1px;
+}
+
+#water {
+background-image:url("../images/water.png");
+background-repeat: no-repeat;
+background-position:0 -199px;
+float:left;
+height:200px;
+/* Russeree: larger pad on bot */
+padding-bottom: 50px;
+width:275px;
+/* Russeree: Webkit Transitions */
+transition:background-position .0s;
+-webkit-transition:background-position .0s; /* Safari */
+}
+
+#water:hover, #water:focus {
+background-position:0px -02px;
+}
+
+#news {
+
+clear:both;
+position: relative;
+}
+
+#news h3 {
+margin-top: 30px;
+max-width:340px;
+}
+
+#news p {
+float: left;
+padding-right:20px;
+clear:left;
+}
+
+#news img {
+float: right;
+/* MAKE SURE YOUR IMAGE IS RESIZED TO THESE DIMENSIONS OR THE WEBSITE WILL EXPLODE */
+width: 475px !important; 
+height: 316px !important;
+margin-right: 110px;
+}
+
+ul#officers {
+float: left;
+margin: -305px 0 20px 20px;
+}
+
+
+
+ul#officers {
+width:520px;
+max-height: 300px;
+list-style-type: none;
+margin-bottom: 60px;
+}
+
+ul#officers li {
+display: inline;
+text-align: left;
+width: 110px;
+float: left;
+margin: 0 20px 20px 0;
+}
+
+ul#officers img {
+margin: 0;
+width:110px;
+}
+
+input {
+clear:both;
+font-family:"Gill Sans", Helvetica, Arial, sans-serif;
+font-size:1em;
+background-color: #e1e1dc;
+border:1px solid black;
+margin:-10px 0 10px 0;
+padding:0 3px;
+width:200px;
+height:25px;
+}
+
+input:focus {
+border:1px solid #d85a1a;
+}
+
+textarea {
+clear:both;
+font-family:"Gill Sans", Helvetica, Arial, sans-serif;
+background-color: #e1e1dc;
+color:#000;
+border:1px solid black;
+margin:-10px 0 25px 0;
+padding:0 3px;
+width:200px;
+height:100px;
+}
+
+textarea:focus {
+border:1px solid #d85a1a;
+}
+
+
+
+/************************************************************
+* 
+* END MAIN BODY STYLES
+* 
+************************************************************/
+
+
+
+/************************************************************
+* 
+* FOOTER STYLES
+* 
+************************************************************/
+
+.contFooter {
+/* width: 100%; */	
+min-width: 1100px;
+/*FIXME - Run a JS to grab size */ 
+height: 240px !important;
+background-image: url("../images/footTopBG.png");
+background-repeat: repeat-x;
+/* padding: 15px; */
+/* Russeree CSS3 wizzardry */
+box-shadow: 3px 3px 3px #cccccc;
+border-radius: 5px;
+clear:both;
+}
+
+.footer {
+width:960px;
+position: relative;
+margin: 0 auto;
+clear:both;
+color: #1F1F1F;
+
+}
+
+.footer h3 {
+color:#000;
+position: absolute;
+top:50px;
+}
+
+.footer a:hover {
+color: #1F1F1E;
+}
+
+.footer ul {
+float: left;
+position: absolute;
+top:85px;
+margin: 0px 20px -120px 0;
+padding: 0 20px 0 0;
+}
+
+ul#internal {
+position: absolute;
+left:0px;
+}
+
+ul#external {
+position: absolute;
+left:120px;
+}
+
+/************************************************************
+* 
+* END FOOTER STYLES
+* 
+************************************************************/
+
+
+
+/************************************************************
+* 
+* RANDOM STYLES
+* 
+************************************************************/
+
+
+
+/************************************************************
+* 
+* END RANDOM STYLES
+* 
+************************************************************/
+
