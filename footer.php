@@ -13,9 +13,9 @@
                     <li><a href="contact">Contact</a></li>
                 </ul>
                 <ul id="external">
-                    <li><a href="http://osumarsrover.com/">Mars Rover website</a></li>
-                    <li><a href="http://oregonstate.edu/groups/osurc/aerial">Autonomous Aerial</a></li>
-                    <li><a href="http://groups.engr.oregonstate.edu/osurc/underwater/">Underwater ROV</a></li>
+                    <li><a href="mars">Mars Rover</a></li>
+                    <li><a href="aerial">Autonomous Aerial</a></li>
+                    <li><a href="underwater">Underwater ROV</a></li>
                     <!-- <li><a href="http://beaversource.oregonstate.edu/projects/telepresence">Telepresence website</a></li> -->
                     <!-- <li><a href="#"><br /></a></li> -->
                 </ul>

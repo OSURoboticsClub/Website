@@ -60,7 +60,7 @@
                 <li><a href="mars">Mars Rover</a></li>
                 <li><a href="aerial">Autonomous Aerial</a></li>
                 <li><a href="underwater">Underwater ROV</a></li>
-                <li><a href="memberProjects">Smaller Projects</a></li>
+                <li><a href="memberProjects">Member Projects</a></li>
               </ul>
             </li>
             <li><a class="general comps" href="competitions">Competitions</a></li>
