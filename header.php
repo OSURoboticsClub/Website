@@ -45,27 +45,27 @@
           <ul class="nav navbar-nav" id="robot-nav">
             <li class="active"><a class="general home" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
             <li class="dropdown">
-              <a data-toggle="dropdown" class="general about dropdown-toggle disabled" href="about">About <b class="caret"></b></a>
+              <a data-toggle="dropdown" class="general about dropdown-toggle disabled" href="<?php echo esc_url( home_url( '/' ) ); ?>/about">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="jobs">Job Postings</a></li>
-                <li><a href="resources">Resources</a></li>
-                <li><a href="sponsors">Sponsors</a></li>
-                <li><a href="outreach">FIRST Outreach</a></li>
-                <li><a href="alumni">Alumni</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/jobs">Job Postings</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/resources">Resources</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/sponsors">Sponsors</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/outreach">FIRST Outreach</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/alumni">Alumni</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a data-toggle="dropdown" class="general general projects disabled" href="projects">Projects <b class="caret"></b></a>
+              <a data-toggle="dropdown" class="general general projects disabled" href="<?php echo esc_url( home_url( '/' ) ); ?>/projects">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="mars">Mars Rover</a></li>
-                <li><a href="aerial">Autonomous Aerial</a></li>
-                <li><a href="underwater">Underwater ROV</a></li>
-                <li><a href="memberProjects">Member Projects</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/mars">Mars Rover</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/aerial">Autonomous Aerial</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/underwater">Underwater ROV</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/memberProjects">Member Projects</a></li>
               </ul>
             </li>
-            <li><a class="general comps" href="competitions">Competitions</a></li>
-            <li><a class="general gal" href="gallery">Gallery</a></li>
-            <li><a class="general contact" href="contact">Contact</a></li>
+            <li><a class="general comps" href="<?php echo esc_url( home_url( '/' ) ); ?>/competitions">Competitions</a></li>
+            <li><a class="general gal" href="<?php echo esc_url( home_url( '/' ) ); ?>/gallery">Gallery</a></li>
+            <li><a class="general contact" href="<?php echo esc_url( home_url( '/' ) ); ?>/contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

@@ -5,19 +5,19 @@
             <div class="sectThree">
                 <h3>Navigation</h3>
                 <ul id="internal">
-                    <li><a href="index">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="competitions">Competitions</a></li>
-                    <li><a href="gallery">Gallery</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/index">Home</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/about">About</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/projects">Projects</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/competitions">Competitions</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/gallery">Gallery</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact">Contact</a></li>
                 </ul>
                 <ul id="external">
-                    <li><a href="mars">Mars Rover</a></li>
-                    <li><a href="aerial">Autonomous Aerial</a></li>
-                    <li><a href="underwater">Underwater ROV</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/mars">Mars Rover</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/aerial">Autonomous Aerial</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/underwater">Underwater ROV</a></li>
                     <!-- <li><a href="http://beaversource.oregonstate.edu/projects/telepresence">Telepresence website</a></li> -->
-                    <!-- <li><a href="#"><br /></a></li> -->
+                    <!-- <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/#"><br /></a></li> -->
                 </ul>
             </div>
         
