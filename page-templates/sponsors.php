@@ -5,6 +5,34 @@
 
 get_header(); ?>
 
+	<style type="text/css">
+		ul#nav li > ul {
+		display: none;
+		position: absolute;
+		top:115px;
+		left:20px;
+		}
+
+		ul#nav li:hover > ul, ul#nav li > ul:hover {
+		display: inline;
+		}
+
+		ul#nav li > ul li a {
+		background-image: none !important;
+		text-indent: 0 !important;
+		width:100px;
+		}
+
+		.sponsor {
+		clear: none;
+		float: left;
+		width:300px;
+		height:250px;
+		margin-right:100px;
+	}
+
+	</style>
+
   <div class="row">
     <div style="background-image: none; margin-bottom: -55px;" class="contMain">
       <div class="main">
