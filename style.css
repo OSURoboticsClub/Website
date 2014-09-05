@@ -314,5 +314,41 @@ ul {
 list-style: none;
 }
 
+h2 {
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 48px;
+color: #e1e1dc;
+line-height:1em;
+}
+
+h3 {
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 24px;
+line-height:1em;
+color: #e1e1dc;
+margin-bottom:10px;
+}
+
+h4 {
+font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
+font-size: 18px;
+line-height:1em;
+color: #e1e1dc;
+}
+
+a {
+color: #d85a1a;
+text-decoration: none;
+}
+
+a:hover {
+color: #E1E1DC;
+}
+
+p {
+margin-bottom: 1em;
+float: left;
+}
+
 
 
