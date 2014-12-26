@@ -7,7 +7,7 @@ Template Name: Home Page
     <div class="col-md-5 col-md-push-1">
       <p>
         <img src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome.png"><br><br>
-        <?php get_sidebar( 'home-page-intro' ); ?>
+        <?php dynamic_sidebar( 'home-page-intro' ); ?>
       </p>
     </div>
   </div>
