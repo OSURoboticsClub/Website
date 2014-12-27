@@ -30,9 +30,7 @@
             
             <div class="sectThree">
                 <h3 style="margin-bottom: 20px;">Meeting Dates</h3>
-                <ul style="margin-top: 20px;">
-                    Meeting times to be announced.
-                </ul>
+                <?php dynamic_sidebar( 'footer-meeting-dates' ); ?>
             </div>
         </div>
     </div>

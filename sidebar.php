@@ -23,4 +23,24 @@
 		<?php dynamic_sidebar( 'underwater-social-media' ); ?>
 	</div><!-- #primary-sidebar -->
 <?php endif; ?>
+<?php if ( is_active_sidebar( 'footer-meeting-dates' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'footer-meeting-dates' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
+<?php if ( is_active_sidebar( 'mars-rover-meeting-times' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'mars-rover-meeting-times' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
+<?php if ( is_active_sidebar( 'aerial-meeting-times' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'aerial-meeting-times' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
+<?php if ( is_active_sidebar( 'underwater-meeting-times' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'underwater-meeting-times' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
 

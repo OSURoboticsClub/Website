@@ -44,6 +44,38 @@ function wpb_widgets_init() {
 		'before_widget' => '<div style="margin-top: 20px !important;">',
 		'after_widget' => '</div>',
 	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer Meeting Dates', 'wpb' ),
+		'id' => 'footer-meeting-dates',
+		'description' => __( 'This is the footer meeting dates widget', 'wpb' ),
+		'before_widget' => '<ul style="margin-top: 20px;">',
+		'after_widget' => '</ul>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Mars Rover Meeting Times', 'wpb' ),
+		'id' => 'mars-rover-meeting-times',
+		'description' => __( 'This is the mars rover meeting times widget', 'wpb' ),
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Aerial Meeting Times', 'wpb' ),
+		'id' => 'aerial-meeting-times',
+		'description' => __( 'This is the autonomous aerial meeting times widget', 'wpb' ),
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Underwater Meeting Times', 'wpb' ),
+		'id' => 'underwater-meeting-times',
+		'description' => __( 'This is the underwater meeting times widget', 'wpb' ),
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+	) );
 }
 
 add_action( 'widgets_init', 'wpb_widgets_init' );
