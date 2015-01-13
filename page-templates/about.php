@@ -37,8 +37,7 @@ get_header(); ?>
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/nick.jpg" class="border" style="" alt="Nick">
 					<br>
 					<a href="mailto:mccombn@onid.oregonstate.edu">Nick McComb</a><br>
-					Vice President <br>
-					<span style="font-size:.9em;text-align:center;">Web Developer</span>
+					Vice President
 				</td>
 				<td>
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/corwin.jpg" class="border" style="" alt="Corwin">
@@ -49,10 +48,11 @@ get_header(); ?>
 			</tr>
 			<tr>
 				<td>
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/question.jpg" class="border" style="" alt="John">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/john.png" class="border" style="" alt="John">
 					<br>
 					<a href="mailto:johnlzeller@gmail.com">John Zeller</a><br> 
-					Secretary
+					Secretary <br>
+					<span style="font-size:.9em;text-align:center;">Web Developer</span>
 				</td>
 				<td>
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/question.jpg" class="border" style="" alt="Nathan">
