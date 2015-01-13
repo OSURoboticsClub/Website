@@ -13,7 +13,7 @@
                     <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact">Contact</a></li>
                 </ul>
                 <ul id="external">
-                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/mars">Mars Rover</a></li>
+                    <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/rover">Mars Rover</a></li>
                     <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/aerial">Autonomous Aerial</a></li>
                     <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/underwater">Underwater ROV</a></li>
                     <!-- <li><a href="http://beaversource.oregonstate.edu/projects/telepresence">Telepresence website</a></li> -->

@@ -57,7 +57,7 @@
             <li class="dropdown">
               <a data-toggle="dropdown" class="general general projects disabled" href="<?php echo esc_url( home_url( '/' ) ); ?>/projects">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/mars">Mars Rover</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/rover">Mars Rover</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/aerial">Autonomous Aerial</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/underwater">Underwater ROV</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/memberProjects">Member Projects</a></li>
