@@ -52,13 +52,13 @@ get_header(); ?>
 					<br>
 					<a href="mailto:johnlzeller@gmail.com">John Zeller</a><br> 
 					Secretary <br>
-					<span style="font-size:.9em;text-align:center;">Web Developer</span>
+					Web Developer
 				</td>
 				<td>
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/question.jpg" class="border" style="" alt="Nathan">
 					<br>
 					<a href="mailto:brahmstn@onid.oregonstate.edu">Nathan Brahmstad</a><br> 
-					Hardware Developer
+					Hardware Developer <br><br>
 				</td>
 			</tr>
 			</tbody>
