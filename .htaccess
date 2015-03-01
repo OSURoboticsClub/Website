@@ -20,6 +20,7 @@ Redirect 301 "/osurc/urc/report/2010 Oregon State University Mars Rover CAD Mode
 Redirect 301 /osurc/2011_tshirt_design_rules.pdf /osurc/files/2011_tshirt_design_rules.pdf
 Redirect 301 /osurc/OSURCConstitution2011.pdf /osurc/files/OSURCConstitution2011.pdf
 Redirect 301 /osurc/docs /osurc/files
+Redirect 301 /osurc/mars /osurc/rover
 Redirect 301 /osurc/static/logo.png /osurc/images/logo.png
 Redirect 301 /osurc/static/osurc_logo_hi_res_black_200.png /osurc/images/osurc_logo_hi_res_black_200.png
 Redirect 301 /osurc/ENGR299 /osurc/files/ENGR299
