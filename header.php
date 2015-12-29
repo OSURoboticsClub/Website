@@ -4,19 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Welcome to the OSU Robotics Club website!">
+    <meta name="author" content="OSU Robotics Club">
 
     <title>Home | Robotics Club | Oregon State University</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Styles from the previously designed OSURC website -->
-    <!-- <link href="<?php echo get_stylesheet_directory_uri() ?>/css/osurc.css" rel="stylesheet">-->
-
     <!-- Custom styles for this template -->
     <link href="<?php echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet">
+
+    </script>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,46 +28,59 @@
   </head>
 
   <body>
-
-    <div style="height:140px; background-color: #E2E2DE; border-top: 10px solid #D85A1A;" class="navbar navbar-fixed-top" role="navigation">
-      <div class="container">
+    <!-- HEADER -->
+    <div class="container-fullwidth">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- TOGGLE -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png"></a>
         </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav" id="robot-nav">
-            <li class="active"><a class="general home" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
+        <!-- END TOGGLE -->
+        <!-- LINKS (collapses) -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <!-- LOGO -->
+            <li id="logo">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png">
+              </a>
+            </li>
+            <!-- END LOGO -->
+            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
             <li class="dropdown">
-              <a data-toggle="dropdown" class="general about dropdown-toggle disabled" href="<?php echo esc_url( home_url( '/' ) ); ?>/about">About <b class="caret"></b></a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>about" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/jobs">Job Postings</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/resources">Resources</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/sponsors">Sponsors</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/outreach">FIRST Outreach</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/alumni">Alumni</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>jobs">Job Postings</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>resources">Resources</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>sponsors">Sponsors</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>outreach">FIRST Outreach</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>alumni">Alumni</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a data-toggle="dropdown" class="general general projects disabled" href="<?php echo esc_url( home_url( '/' ) ); ?>/projects">Projects <b class="caret"></b></a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>projects" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/rover">Mars Rover</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/aerial">Autonomous Aerial</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/underwater">Underwater ROV</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/memberProjects">Member Projects</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">Projects</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>rover">Mars Rover</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>aerial">Autonomous Aerial</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>underwater">Underwater ROV</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>memberProjects">Member Projects</a></li>
               </ul>
             </li>
-            <li><a class="general comps" href="<?php echo esc_url( home_url( '/' ) ); ?>/competitions">Competitions</a></li>
-            <li><a class="general gal" href="<?php echo esc_url( home_url( '/' ) ); ?>/gallery">Gallery</a></li>
-            <li><a class="general contact" href="<?php echo esc_url( home_url( '/' ) ); ?>/contact">Contact</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>competitions">Competitions</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>gallery">Gallery</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+        </div>
+        <!-- END LINKS -->
+      </nav>
+   </div>
 
+    <!-- END HEADER -->
     <div class="container content-area">
