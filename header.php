@@ -15,6 +15,8 @@
     <!-- Custom styles for this template -->
     <link href="<?php echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet">
 
+    </script>
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -49,10 +51,11 @@
               </a>
             </li>
             <!-- END LOGO -->
-            <li><a href="#">Home</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
             <li class="dropdown">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>about" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>jobs">Job Postings</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>resources">Resources</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>sponsors">Sponsors</a></li>
@@ -63,6 +66,7 @@
             <li class="dropdown">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>projects" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
+                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">Projects</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>rover">Mars Rover</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>aerial">Autonomous Aerial</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>underwater">Underwater ROV</a></li>
