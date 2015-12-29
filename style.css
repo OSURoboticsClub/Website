@@ -1,14 +1,14 @@
 /*
- *  * Theme Name:OSURC 
- *   * Theme URI: 
- *    * Author: John Zeller 
- *     * Author URI: http://www.johnzeller.com 
- *      * Description: A wordpress theme for the OSU Robotics Club! 
- *       * Version: 0.1 
+ *  * Theme Name:OSURC
+ *   * Theme URI:
+ *    * Author: John Zeller
+ *     * Author URI: http://www.johnzeller.com
+ *      * Description: A wordpress theme for the OSU Robotics Club!
+ *       * Version: 0.1
  *        * License: GNU General Public License v2 or later
  *         * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- *          * Tags: 
- *           * Text Domain: OSURC 
+ *          * Tags:
+ *           * Text Domain: OSURC
  *            *
  *             * */
 
@@ -23,145 +23,87 @@ body {
   height: 100%;
   background-image: url('images/mainBG2.png');
   background-repeat: repeat;
-  padding-top: 50px;
+  padding-top: 0px;
   color: #E5E5E0 !important;
 }
 
 @font-face {
-font-family:'Soho';
-src:url('fonts/sohomedium.otf') format("opentype");
+  font-family:'Soho';
+  src:url('fonts/sohomedium.otf') format("opentype");
 }
 
 img.border {
-border: 5px solid #e1e1dc;
+  border: 5px solid #e1e1dc;
 }
 
 
 /* ==================== TYPOGRAPHY ==================== */
 
 .content-area {
-  margin: 130px auto 10px auto;
+  margin: 30px auto 10px auto;
+}
+
+/* =================== HEADER PATCH =================== */
+
+.navbar {
+  border-radius: 0px;
+  background-color: #E2E2DE;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  font-family: 'Soho', serif;
+  font-size: 18px;
+}
+.brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.navbar-brand {
+  height: auto !important;
+}
+
+@media (max-width: 1051px) and (min-width: 824px) {
+  .navbar .navbar-nav #logo img {
+    content: url("images/logo-icon.png");
+  }
+}
+
+@media (max-width: 823px) {
+  .navbar .navbar-nav #logo {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-brand,
+  .navbar-nav li a {
+    line-height: 101px;
+    height: 101px;
+    padding-top: 0;
+  }
+}
+
+.navbar .navbar-nav .dropdown-menu li a {
+  line-height: 40px;
+  height: 40px;
+  padding-top: 0;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #333 !important;
 }
 
 /* ====================== LAYOUT ====================== */
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-ul#robot-nav {
-display:inline !important;
-list-style:none;
-position: relative;
-width:665px;
-float: left;
-padding: 50px 0 50px 30px;
-}
-
-ul#robot-nav li {
-display:inline;
-font-family: "Gill Sans","Gill Sans MT",helvetica,arial,sans-serif;
-}
-
-ul#robot-nav li a.general {
-background-image:url("images/navimg.png");
-display:inline;
-float:left;
-height:59px;
-margin:0 10px 0 10px;
-padding:0 0 6px 0;
-text-indent:-9999px;
-width:59px;
-}
-
-ul#robot-nav li a.home {
-background-position:0px -1px;
-width:59px;
-}
-
-ul#robot-nav li a.about {
-background-position:-61px -1px;
-width:59px;
-}
-
-ul#robot-nav li a.projects {
-background-position:-125px -1px;
-width:71px;
-}
-
-ul#robot-nav li a.comps {
-background-position:-200px -1px;
-width:115px;
-}
-
-ul#robot-nav li a.gal {
-background-position:-320px -1px;
-width:65px;
-}
-
-ul#robot-nav li a.res {
-background-position:-475px -1px;
-width:85px;
-}
-
-ul#robot-nav li a.contact {
-background-position:-395px -1px;
-width:72px;
-}
-
-ul#robot-nav li a:hover {
-	background-color: transparent !important;
-}
-
-ul#robot-nav li a.home:hover, ul#robot-nav li a.home:focus {
-background-position:0px -65px;
-}
-
-ul#robot-nav li a.about:hover, ul#robot-nav li a.about:focus {
-background-position:-61px -65px;
-}
-
-ul#robot-nav li a.projects:hover, ul#robot-nav li a.projects:focus {
-background-position:-125px -65px;
-}
-
-ul#robot-nav li a.comps:hover, ul#robot-nav li a.comps:focus {
-background-position:-200px -65px;
-}
-
-ul#robot-nav li a.gal:hover, ul#robot-nav li a.gal:focus {
-background-position:-320px -65px;
-}
-
-ul#robot-nav li a.res:hover, ul#robot-nav li a.res:focus {
-background-position:-475px -65px;
-}
-
-ul#robot-nav li a.contact:hover, ul#robot-nav li a.contact:focus {
-background-position:-395px -65px;
-}
-
-ul.projSub {
-width:600px;
-height: 30px;
-}
-
-ul.projSub li {
-display: inline;
-margin-right: 20px;
-font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
-font-size: 14px;
-line-height:1em;
-color: #1F1F1F;
-}
-
-ul.projSub li a {
-color: #1F1F1F;
-}
-
-ul.projSub li a:hover {
-color: #d85a1a;
-}
 
 h1 {
 font-family: "Soho",Chunkfive,Rockwell,Egyptienne,Egyptian,Georgia,Times,serif;
@@ -178,7 +120,7 @@ background-color: #d85a1a;
 /* width: 100%; Nick: Removed because of weird spacing */
 background-image: url("images/mainBG2.png");
 background-repeat: repeat;
-/* Russeree: added 15px padding to sides */ 
+/* Russeree: added 15px padding to sides */
 padding: 15px;
 }
 
@@ -195,7 +137,7 @@ clear: both !important;
 
 .section h1 {
 width: 100%;
-margin-left: -100%; 
+margin-left: -100%;
 padding-left: 100%;
 margin-bottom: 20px;
 background-color: transparent !important;
@@ -265,9 +207,9 @@ background-position:0px -02px;
 }
 
 .contFooter {
-/* width: 100%; */  
+/* width: 100%; */
 min-width: 1100px;
-/*FIXME - Run a JS to grab size */ 
+/*FIXME - Run a JS to grab size */
 height: 240px !important;
 clear:both;
 }
@@ -344,4 +286,3 @@ text-decoration: none;
 a:hover {
 color: #E1E1DC;
 }
-
