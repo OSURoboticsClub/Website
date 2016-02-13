@@ -1,0 +1,67 @@
+* {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjbQg61aAAAADUlEQVQYV2P4//8/IwAI/QL/+TZZdwAAAABJRU5ErkJggg=='),
+    none;
+}
+body {
+	margin: 0;
+	padding: 0;
+  background-color: #000;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 14px;
+}
+
+#loading {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.calendar {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+
+#image-loader {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding: 8px;
+	box-sizing: border-box;
+	background: #111;
+}
+
+#image-loader #banner {
+	height: 100px;
+	padding: 10px;
+	background-color: #000;
+	text-align: right;
+}
+
+#image-loader #banner > .logo {
+	height: 100px;
+}
+
+#image-loader #image {
+}
+
+#image-loader #splash {
+  background: url("../images/clab-calendar/splash.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#calendar {
+	position: absolute;
+	margin: 0 8px 8px 8px;
+  background-color: #FFF;
+}
+
+.fc-right {
+  display: none;
+}

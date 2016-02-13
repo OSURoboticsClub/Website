@@ -7,15 +7,14 @@
     <meta name="description" content="Welcome to the OSU Robotics Club website!">
     <meta name="author" content="OSU Robotics Club">
 
-    <title>Home | Robotics Club | Oregon State University</title>
+    <title><? echo $post->post_title . " | " . get_bloginfo(); ?></title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<?php echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<? echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<?php echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet">
-
-    </script>
+    <link href="<? echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet">
+    <script src="<? echo get_stylesheet_directory_uri() ?>/js/jquery.min.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,36 +45,36 @@
           <ul class="nav navbar-nav">
             <!-- LOGO -->
             <li id="logo">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png">
+              <a href="<? echo esc_url( home_url( '/' ) ); ?>">
+                <img src="<? echo get_stylesheet_directory_uri() ?>/images/logo-old.png">
               </a>
             </li>
             <!-- END LOGO -->
-            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
+            <li><a href="<? echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
             <li class="dropdown">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>about" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+              <a href="<? echo esc_url( home_url( '/' ) ); ?>about" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>jobs">Job Postings</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>resources">Resources</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>sponsors">Sponsors</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>outreach">FIRST Outreach</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>alumni">Alumni</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>about">About</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>jobs">Job Postings</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>resources">Resources</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>sponsors">Sponsors</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>outreach">FIRST Outreach</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>alumni">Alumni</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>projects" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+              <a href="<? echo esc_url( home_url( '/' ) ); ?>projects" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>projects">Projects</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>rover">Mars Rover</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>aerial">Autonomous Aerial</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>underwater">Underwater ROV</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>memberProjects">Member Projects</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>projects">Projects</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>rover">Mars Rover</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>aerial">Autonomous Aerial</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>underwater">Underwater ROV</a></li>
+                <li><a href="<? echo esc_url( home_url( '/' ) ); ?>memberProjects">Member Projects</a></li>
               </ul>
             </li>
-            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>competitions">Competitions</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>gallery">Gallery</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Contact</a></li>
+            <li><a href="http://wiki.osurobotics.club">Wiki</a></li>
+            <li><a href="<? echo esc_url( home_url( '/' ) ); ?>calendar">Calendar</a></li>
+            <li><a href="<? echo esc_url( home_url( '/' ) ); ?>contact">Contact</a></li>
           </ul>
         </div>
         <!-- END LINKS -->
@@ -83,4 +82,3 @@
    </div>
 
     <!-- END HEADER -->
-    <div class="container content-area">

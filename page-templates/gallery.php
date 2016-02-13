@@ -1,19 +1,20 @@
-<?php get_header(); 
+<? get_header();
 /*
-Template Name: Gallery Page
+Template Name: Gallery
 */?>
+<div class="container content-area">
   <div class="row">
     <div style="background-image: none;" class="contMain">
       <div class="main">
         <div class="left" style="margin:0px 0 0 0;">
           <div class="section">
-            <h1 style="width: 150%; margin-left: -50%; padding-left: 50%; margin-top: -30px;"><?php the_title() ?></h1>
+            <h1 style="width: 150%; margin-left: -50%; padding-left: 50%; margin-top: -30px;"><? the_title() ?></h1>
           </div>
         </div>
       </div>
     </div>
     <div class="col-md-10 col-md-push-1">
-	      <?php
+	      <?
 	        // Start the Loop.
 	        while ( have_posts() ) : the_post();
 
@@ -37,9 +38,8 @@ foreach ($media_query->posts as $post) {
     $list[] = [wp_get_attachment_image_src( $post->ID, 'thumbnail' )[0], wp_get_attachment_url( $post->ID )];
 }
 foreach ($list as $imageurl) { ?>
-    <a href='<?php echo $imageurl[1]; ?>'><img src='<?php echo $imageurl[0]; ?>' style="width: 150px; height: 150px;"></a>
-<?php } ?>
+    <a href='<? echo $imageurl[1]; ?>'><img src='<? echo $imageurl[0]; ?>' style="width: 150px; height: 150px;"></a>
+<? } ?>
     </div>
   </div>
-<?php get_footer(); ?>
-
+<? get_footer(); ?>

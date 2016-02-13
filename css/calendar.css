@@ -1,0 +1,59 @@
+
+#loading {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.calendar {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+
+#image-loader {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding: 8px;
+	box-sizing: border-box;
+	background: #111;
+}
+
+#image-loader #banner {
+	height: 100px;
+	background-color: #000;
+	text-align: right;
+}
+
+#image-loader #banner > .logo {
+	height: 100px;
+}
+
+#image-loader #image {
+}
+
+#calendar {
+  background-color: #FFF;
+}
+
+#calendar thead,
+#calendar .fc-time,
+#calendar .fc-axis.fc-widget-content {
+	color: #000 !important;
+}
+
+#calendar h2 {
+	color: #000 !important;
+	display: block !important;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif !important;
+	font-size: 1.5em !important;
+	-webkit-margin-before: 0px !important;
+	-webkit-margin-after: 0px !important;
+	-webkit-margin-start: 0px !important;
+	-webkit-margin-end: 0px !important;
+	font-weight: bold !important;
+}

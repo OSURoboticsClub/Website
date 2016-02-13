@@ -1,15 +1,15 @@
-<?php
+<?
 /**
- * Template Name: About Page
+ * Template Name: About
  */
 
 get_header(); ?>
-
+<div class="container content-area">
   <div class="row">
     <div class="col-md-5 col-md-push-1">
-    	<img style="background-color: transparent; border: 0px;" class="img-thumbnail" src="<?php echo get_stylesheet_directory_uri() ?>/images/keypeople.png">
+    	<img style="background-color: transparent; border: 0px;" class="img-thumbnail" src="<? echo get_stylesheet_directory_uri() ?>/images/keypeople.png">
 		<p>
-			<?php
+			<?
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
 
@@ -28,19 +28,19 @@ get_header(); ?>
     	<table class="officersTable" style="" cellpadding="10">
 			<tbody><tr>
 				<td>
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/billy.jpg" class="border" style="" alt="Billy">
+					<img src="http://osurobotics.club/wp-content/uploads/2015/12/Nick-150x150.jpg" class="border" style="" alt="Nick">
 					<br>
-					<a href="mailto:rycoske@gmail.com">Billy Edwards</a><br>
+					<a href="mailto:mccombn@onid.oregonstate.edu">Nick McComb</a><br>
 					President
 				</td>
 				<td>
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/nick.jpg" class="border" style="" alt="Nick">
+					<img src="http://osurobotics.club/wp-content/uploads/2015/12/Dylan-150x150.jpg" class="border" style="" alt="Dylan ">
 					<br>
-					<a href="mailto:mccombn@onid.oregonstate.edu">Nick McComb</a><br>
-					Vice President
+					<a href="mailto:dylanthrush1@gmail.com">Dylan Thrush</a><br>
+					Vice-President
 				</td>
 				<td>
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/corwin.jpg" class="border" style="" alt="Corwin">
+					<img src="http://osurobotics.club/wp-content/uploads/2015/12/Corwin-150x150.jpg" class="border" style="" alt="Corwin">
 					<br>
 					<a href="mailto:caperren@gmail.com">Corwin Perren</a><br>
 					Treasurer
@@ -48,17 +48,10 @@ get_header(); ?>
 			</tr>
 			<tr>
 				<td>
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/john.png" class="border" style="" alt="John">
+					<img src="http://osurobotics.club/wp-content/uploads/2015/12/Billy-150x150.jpg" class="border" style="" alt="Billy">
 					<br>
-					<a href="mailto:johnlzeller@gmail.com">John Zeller</a><br> 
+					<a href="mailto:rycoske@gmail.com">Billy Edwards</a><br>
 					Secretary <br>
-					Web Developer
-				</td>
-				<td>
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/images/question.jpg" class="border" style="" alt="Nathan">
-					<br>
-					<a href="mailto:brahmstn@onid.oregonstate.edu">Nathan Brahmstad</a><br> 
-					Hardware Developer <br><br>
 				</td>
 			</tr>
 			</tbody>
@@ -66,5 +59,5 @@ get_header(); ?>
 	</div>
   </div>
 
-<?php
+<?
 get_footer();

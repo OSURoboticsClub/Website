@@ -1,19 +1,20 @@
-<?php get_header();
+<? get_header();
 /*
 Template Name: Home Page
 */?>
+<div class="container content-area">
   <div class="row">
-    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="<?php echo get_stylesheet_directory_uri() ?>/images/tyler.jpg"></div>
+    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="<? echo get_stylesheet_directory_uri() ?>/images/tyler.jpg"></div>
     <div class="col-md-5 col-md-push-1">
       <p>
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome.png"><br><br>
-        <?php dynamic_sidebar( 'home-page-intro' ); ?>
+        <img src="<? echo get_stylesheet_directory_uri() ?>/images/welcome.png"><br><br>
+        <? dynamic_sidebar( 'home-page-intro' ); ?>
       </p>
     </div>
   </div>
   <div class="row">
     <div class="col-md-10 col-md-push-1">
-      <?php
+      <?
         // Start the Loop.
         while ( have_posts() ) : the_post();
 
@@ -29,17 +30,17 @@ Template Name: Home Page
     </div>
   </div>
   <div class="row">
-    <div style="background-image: none;" class="contMain">
+    <div class="contMain">
       <div class="main">
         <div class="left" style="margin:0px 0 0 0;">
           <div class="section">
             <h1 style="width: 150%; margin-left: -50%; padding-left: 50%;">Featured Projects:</h1>
-            <div class="sectThree" id="aerial"><p>The Autonomous Aerial team was formed in 2009 and competes in the International Aerial Robotics Competition. For the 2013 competition, the vehicle must navigate through a building, remove a flash drive from a table, and replace it with a new one. </p><a href="<?php echo esc_url( home_url( '/' ) ); ?>/aerial">Visit here for more</a>.</div>
-            <div class="sectThree" id="mars"><p>The Mars Rover team has competed in the University Rover Challenge since 2008, when they took first place. The teleoperated rover must perform a variety of tasks, including locating bacteria, locating a distressed astronaut, and manipulating a control panel. </p><a href="<?php echo esc_url( home_url( '/' ) ); ?>/rover">Visit here for more</a>.</div>
-            <div class="sectThree" id="water"><p>OSURC is participating for the first time in an autonomous underwater vehicle competition in San Diego this summer. The team is designing a small underwater robot to navigate a course of buoys, pipes, and hydrophcurrents. Some of the subsystems include underwater acoustics, propulsion, cameras, and pressure vessels.</p><a href="<?php echo esc_url( home_url( '/' ) ); ?>/underwater">Visit here for more</a>.</div>
+            <div class="sectThree" id="aerial"><p>The Autonomous Aerial team was formed in 2009 and competes in the International Aerial Robotics Competition. For the 2013 competition, the vehicle must navigate through a building, remove a flash drive from a table, and replace it with a new one. </p><a href="<? echo esc_url( home_url( '/' ) ); ?>/aerial">Visit here for more</a>.</div>
+            <div class="sectThree" id="mars"><p>The OSU Mars Rover Team is a distinguished robotics team within the OSURC that creates Mars Rover-like robots to compete in international robotics competitions, namely NASA’s Sample Return Robot Challenge and the Mars Society’s University Rover Challenge.</p><a href="<? echo esc_url( home_url( '/' ) ); ?>/rover">Visit here for more</a>.</div>
+            <div class="sectThree" id="water"><p>The OSURC Underwater Team is engineering for the 2015-16 MATE competition. The team will build a small, tethered ROV that can be used to solve today’s problems in the Ocean: re-fitting undersea cable, repair broken oil wellheads, retrieving Cube Satellites, and surveying.</p><a href="<? echo esc_url( home_url( '/' ) ); ?>/underwater">Visit here for more</a>.</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-<?php get_footer(); ?>
+<? get_footer(); ?>

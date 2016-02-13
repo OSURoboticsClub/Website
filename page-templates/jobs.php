@@ -1,23 +1,23 @@
-<?php
+<?
 /**
  * Template Name: Jobs Page
  */
 
 get_header(); ?>
-
+<div class="container content-area">
   <div class="row">
     <div style="background-image: none; margin-bottom: -55px;" class="contMain">
       <div class="main">
         <div class="left" style="margin:0px 0 0 0;">
           <div class="section">
-            <h1 style="width: 150%; margin-left: -50%; padding-left: 50%; margin-top: -30px;"><?php the_title() ?></h1>
+            <h1 style="width: 150%; margin-left: -50%; padding-left: 50%; margin-top: -30px;"><? the_title() ?></h1>
           </div>
         </div>
       </div>
     </div>
     <div class="col-md-5 col-md-push-1">
       <p>
-              <?php
+              <?
                 // Start the Loop.
                 while ( have_posts() ) : the_post();
 
@@ -32,7 +32,7 @@ get_header(); ?>
               ?>
                 </p>
     </div>
-    <div class="col-md-5 col-md-push-1"><?php echo do_shortcode( '[contact-form-7 id="189" title="Job Postings"]' ); ?></div>
+    <div class="col-md-5 col-md-push-1"><? echo do_shortcode( '[contact-form-7 id="189" title="Job Postings"]' ); ?></div>
   </div>
 
-<?php get_footer(); ?>
+<? get_footer(); ?>
