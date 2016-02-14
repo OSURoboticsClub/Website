@@ -13,7 +13,9 @@ Template Name: Default Template
         </div>
       </div>
     </div>
-    <div class="col-md-5 col-md-push-1"><img class="img-thumbnail" src="<? echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>"></div>
+    <div class="col-md-5 col-md-push-1">
+      <img class="img-thumbnail" src="<? echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>">
+    </div>
     <div class="col-md-5 col-md-push-1">
       <p>
 	      <?

@@ -9,8 +9,15 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * /
 
-/* ---- SASS -------------------------------------------------------------------------------------*/
-/* ---- GLOBAL -----------------------------------------------------------------------------------*/
+/* Styling
+--------------------------------------------------------------------------------------------------*/
+/* ---- COLORS -----------------------------------------------------------------------------------*/
+/* ---- FONT STACK -------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "Soho";
+  src: url("fonts/sohomedium.otf") format("opentype"); }
+/* Global Elements
+--------------------------------------------------------------------------------------------------*/
 html {
   min-height: 100%;
   position: relative; }
@@ -22,32 +29,33 @@ body {
   padding-top: 0px;
   color: #E1E1DC !important; }
 
-@font-face {
-  font-family: "Soho";
-  src: url("fonts/sohomedium.otf") format("opentype"); }
-h2,
-h3,
-h4 {
+a {
+  color: #D85A1A;
+  text-decoration: none; }
+  a:hover {
+    color: #E1E1DC; }
+
+h1, h2, h3, h4 {
   font-family: "Soho", Chunkfive, Rockwell, Egyptienne, Egyptian, Georgia, Times, serif;
   color: #E1E1DC;
   line-height: 1em; }
+
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+  padding: 20px 0 25px 0;
+  margin-bottom: 10px;
+  background-color: #D85A1A; }
 
 h2 {
   font-size: 48px; }
 
 h3 {
-  font-size: 24px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 24px; }
 
 h4 {
   font-size: 18px; }
-
-a {
-  color: #D85A1A;
-  text-decoration: none; }
-
-a:hover {
-  color: #E1E1DC; }
 
 ul {
   list-style: none; }
@@ -55,11 +63,8 @@ ul {
 img.border {
   border: 5px solid #E1E1DC; }
 
-/* ==================== TYPOGRAPHY ==================== */
-.content-area {
-  margin: 30px auto 10px auto; }
-
-/* =================== HEADER PATCH =================== */
+/* Header Patch (Author: @Gzxgzxgzx)
+--------------------------------------------------------------------------------------------------*/
 .socialmedia-buttons img {
   padding: 0;
   margin: 0px 5px 10px 5px !important; }
@@ -68,13 +73,22 @@ img.border {
   background-color: #E1E1DC;
   border-radius: 0px;
   border-top: 10px solid #D85A1A; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    padding-top: 8px;
+    float: none;
+    font-family: "Soho", Chunkfive, Rockwell, Egyptienne, Egyptian, Georgia, Times, serif;
+    font-size: 18px; }
+    .navbar .navbar-nav .dropdown-menu li a {
+      line-height: 40px;
+      height: 40px;
+      padding-top: 0; }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  padding-top: 8px;
-  float: none;
-  font-family: 'Soho', serif;
-  font-size: 18px; }
+.navbar .navbar-collapse {
+  text-align: center; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #333 !important; }
 
 .brand {
   position: absolute;
@@ -101,29 +115,19 @@ img.border {
 
   .dropdown:hover .dropdown-menu {
     display: block; } }
-.navbar .navbar-nav .dropdown-menu li a {
-  line-height: 40px;
-  height: 40px;
-  padding-top: 0; }
-
-.navbar .navbar-collapse {
-  text-align: center; }
-
-.navbar-default .navbar-nav > li > a {
-  color: #333 !important; }
-
-/* ====================== LAYOUT ====================== */
-h1 {
-  font-family: "Soho", Chunkfive, Rockwell, Egyptienne, Egyptian, Georgia, Times, serif;
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 1em;
-  color: #E1E1DC;
-  padding: 20px 0 25px 0;
-  margin-bottom: 10px;
-  background-color: #D85A1A; }
+/* Body
+--------------------------------------------------------------------------------------------------*/
+.content-area {
+  margin: 30px auto 10px auto; }
 
 .contMain {
+  background-image: none;
+  padding: 15px; }
+
+.container.wrapper {
+  margin: 30px auto 10px auto; }
+
+#projects.wrapper {
   background-image: none;
   padding: 15px; }
 
@@ -132,14 +136,15 @@ h1 {
   margin: 0 auto; }
 
 .section {
+  height: 200px;
   padding: 20px 0 20px 0px;
   margin-bottom: 20px;
   clear: both !important; }
 
 .section h1 {
-  width: 100%;
-  margin-left: -100%;
-  padding-left: 100%;
+  width: 150%;
+  margin-left: -50%;
+  padding-left: 50%;
   margin-bottom: 20px;
   background-color: transparent !important;
   background-image: url("images/headerbg.png");
@@ -147,7 +152,7 @@ h1 {
   background-position: right center; }
 
 .sectThree {
-  width: 270px;
+  width: 275px;
   float: left;
   margin-right: 40px;
   margin-bottom: 200px; }
@@ -156,87 +161,67 @@ h1 {
   margin-top: 210px;
   max-width: 255px; }
 
+.project {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: 0 -199px; }
+
 #mars {
   background-image: url("images/mars.png");
-  background-repeat: no-repeat;
-  background-position: 0px -199px;
-  float: left;
-  height: 200px;
-  padding: 0 0 20px 0;
-  width: 255px; }
-
-#mars:hover, #mars:focus {
-  background-position: 0 0; }
+  padding: 0 0 20px 0; }
+  #mars:hover, #mars:focus {
+    background-position: 0 0; }
 
 #aerial {
   background-image: url("images/aerial.png");
-  background-repeat: no-repeat;
-  background-position: 0px -199px;
-  float: left;
-  height: 200px;
-  padding: 0;
-  width: 255px; }
-
-#aerial:hover, #aerial:focus {
-  background-position: 0 -1px; }
+  padding: 0; }
+  #aerial:hover, #aerial:focus {
+    background-position: 0 -1px; }
 
 #water {
   background-image: url("images/water.png");
-  background-repeat: no-repeat;
-  background-position: 0 -199px;
-  float: left;
-  height: 200px;
   /* Russeree: larger pad on bot */
   padding-bottom: 50px;
-  width: 275px;
   /* Russeree: Webkit Transitions */
   transition: background-position .0s;
   -webkit-transition: background-position .0s;
   /* Safari */ }
+  #water:hover, #water:focus {
+    background-position: 0 -2px; }
 
-#water:hover, #water:focus {
-  background-position: 0px -02px; }
-
-#contFooter {
+/* Footer
+--------------------------------------------------------------------------------------------------*/
+#footer.wrapper {
   position: absolute;
   width: 100%;
-  min-width: 1100px;
   /*FIXME - Run a JS to grab size */
+  min-width: 1100px;
   height: 240px !important;
   clear: both;
   background-color: #E1E1DC;
   border-top: 10px solid #D85A1A; }
 
-.footer {
+#footer {
   width: 960px;
   position: relative;
   margin: -50px auto 0px auto;
   clear: both;
   color: #000000; }
+  #footer a:hover {
+    color: #000000; }
+  #footer h3 {
+    color: #000000;
+    position: absolute;
+    top: 50px; }
+  #footer ul {
+    float: left;
+    position: absolute;
+    top: 85px;
+    margin: 20px 20px -120px 0;
+    padding: 0 20px 0 0; }
+  #footer ul.left {
+    left: 0px; }
+  #footer ul.right {
+    left: 120px; }
 
-.footer h3 {
-  color: #000000;
-  position: absolute;
-  top: 50px; }
-
-.footer a:hover {
-  color: #000000; }
-
-.footer ul {
-  float: left;
-  position: absolute;
-  top: 85px;
-  margin: 0px 20px -120px 0;
-  padding: 0 20px 0 0; }
-
-ul#internal {
-  margin-top: 20px;
-  position: absolute;
-  left: 0px; }
-
-ul#external {
-  margin-top: 20px;
-  position: absolute;
-  left: 120px; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
