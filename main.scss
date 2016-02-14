@@ -240,9 +240,9 @@ img.border {
   width: 100%; /*FIXME - Run a JS to grab size */
   min-width: 1100px;
   height: 240px !important;
-  clear:both;
+  clear: both;
   background-color: $offwhite;
-  border-top: 10px solid $darkorange
+  border-top: 10px solid $darkorange;
 }
 
 #footer {
