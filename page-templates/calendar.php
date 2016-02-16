@@ -7,7 +7,6 @@ get_header(); ?>
 <div class="container content-area">
 <link href='<?php echo get_stylesheet_directory_uri() ?>/css/calendar.css' rel='stylesheet' />
 <link href='<?php echo get_stylesheet_directory_uri() ?>/css/fullcalendar.css' rel='stylesheet' />
-<link href='<?php echo get_stylesheet_directory_uri() ?>/css/fullcalendar.print.css' rel='stylesheet' media='print' />
 <script src='<?php echo get_stylesheet_directory_uri() ?>/js/moment.min.js'></script>
 <script src='<?php echo get_stylesheet_directory_uri() ?>/js/fullcalendar.min.js'></script>
 <script src='<?php echo get_stylesheet_directory_uri() ?>/js/gcal.js'></script>

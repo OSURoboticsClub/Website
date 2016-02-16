@@ -1,4 +1,6 @@
 *.log
 *.map
-robots.txt
 .sass-cache*
+css/calendar.css
+css/clab-calendar.css
+css/fullcalendar.css

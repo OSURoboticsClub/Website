@@ -22,7 +22,6 @@ echo "<script>var images = ". $js_array . "; var basedir = \"" . content_url() .
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='<?php echo get_stylesheet_directory_uri() ?>/css/clab-calendar.css' rel='stylesheet' />
 <link href='<?php echo get_stylesheet_directory_uri() ?>/css/fullcalendar.css' rel='stylesheet' />
-<link href='<?php echo get_stylesheet_directory_uri() ?>/css/fullcalendar.print.css' rel='stylesheet' media='print' />
 <script src='<?php echo get_stylesheet_directory_uri() ?>/js/jquery.min.js'></script>
 <script src='<?php echo get_stylesheet_directory_uri() ?>/js/moment.min.js'></script>
 <script src='<?php echo get_stylesheet_directory_uri() ?>/js/fullcalendar.min.js'></script>
