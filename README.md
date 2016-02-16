@@ -17,6 +17,9 @@ The OSU Robotics Club website depends on WordPress, a few plugins, and several J
 * [FullCalendar](http://fullcalendar.io/)
 * [JQuery](https://jquery.com/)
 
+### Ruby
+* [Sass](http://sass-lang.com/)
+
 ### WordPress
 * [Akismet](https://akismet.com/)
 * [Contact Form 7](https://wordpress.org/plugins/contact-form-7/)

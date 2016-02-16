@@ -39,28 +39,23 @@ body {
 	padding: 8px;
 	box-sizing: border-box;
 	background: $black;
-}
 
-#image-loader #banner {
-	height: 100px;
-	padding: 10px;
-	background-color: $black;
-	text-align: right;
-}
+  #banner {
+  	height: 100px;
+  	padding: 10px;
+  	background-color: $black;
+  	text-align: right;
+  }
 
-#image-loader #banner > .logo {
-	height: 100px;
-}
+  #banner > .logo { height: 100px; }
 
-#image-loader #image {
-}
-
-#image-loader #splash {
-  background: url("../images/clab-calendar/splash.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  #splash {
+    background: url("../images/clab-calendar/splash.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 #calendar {
