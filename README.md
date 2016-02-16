@@ -10,7 +10,7 @@ We host both internal projects geared toward the beginner, as well as external p
 The OSU Robotics Club website and WordPress theme!
 
 ## Dependencies
-The OSU Robotics Club website depends on WordPress, a few plugins, and several JavaScript libraries to function.
+The OSU Robotics Club website depends on Bootstrap, Fullcalendar, JQuery, Sass, and several WordPress plugins to function.
 
 ### JavaScript
 * [Bootstrap](https://getbootstrap.com/)
