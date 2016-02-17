@@ -1,0 +1,278 @@
+/*
+ * Theme Name:OSURoboticsClub
+ * Theme URI: https://github.com/OSURoboticsClub/Website
+ * Author: OSU Robotics Club
+ * Author URI: http://osourobotics.club
+ * Description: A wordpress theme for the OSU Robotics Club!
+ * Version: 0.2
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * /
+
+/* Notes
+----------------------------------------------------------------------------------------------------
+1. Do not use .wrapper for anything. This tag is used as a dummy class for greater precision w/
+   container selectors.
+
+*/
+/* Styling
+--------------------------------------------------------------------------------------------------*/
+/* ---- COLORS -----------------------------------------------------------------------------------*/
+/* ---- FONT STACK -------------------------------------------------------------------------------*/
+/* ---- IMAGES -----------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "Soho";
+  src: url("fonts/sohomedium.otf") format("opentype"); }
+/* Global Elements
+--------------------------------------------------------------------------------------------------*/
+html {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  height: 100%;
+  background-image: url("images/mainBG2.png");
+  background-repeat: repeat;
+  padding-top: 0px;
+  color: #E1E1DC !important; }
+
+a {
+  color: #D85A1A;
+  text-decoration: none; }
+  a:hover {
+    color: #E1E1DC; }
+
+h1, h2, h3, h4 {
+  font-family: "Soho", Chunkfive, Rockwell, Egyptienne, Egyptian, Georgia, Times, serif;
+  color: #E1E1DC;
+  line-height: 1em; }
+
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+  padding: 20px 0 25px 0;
+  margin-bottom: 10px;
+  background-color: #D85A1A; }
+
+h2 {
+  font-size: 48px; }
+
+h3 {
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  font-size: 24px;
+  border-bottom: 1px solid #E1E1DC; }
+
+h4 {
+  font-size: 18px; }
+
+ul {
+  list-style: none; }
+
+img.border {
+  border: 5px solid #E1E1DC; }
+
+/* @Override Bootstrap
+--------------------------------------------------------------------------------------------------*/
+.container-fullwidth {
+  overflow: hidden; }
+
+/* Header/Navigation
+--------------------------------------------------------------------------------------------------*/
+.socialmedia-buttons img {
+  padding: 0;
+  margin: 0px 5px 10px 5px !important; }
+
+.navbar {
+  background-color: #E1E1DC;
+  border-radius: 0px;
+  border-top: 10px solid #D85A1A;
+  margin: 0px; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    padding-top: 8px;
+    float: none;
+    font-family: "Soho", Chunkfive, Rockwell, Egyptienne, Egyptian, Georgia, Times, serif;
+    font-size: 18px; }
+    .navbar .navbar-nav .dropdown-menu li a {
+      line-height: 40px;
+      height: 40px;
+      padding-top: 0; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #333 !important; }
+
+.brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto; }
+
+.navbar-brand {
+  height: auto !important; }
+
+@media (max-width: 1051px) and (min-width: 824px) {
+  .navbar .navbar-nav #logo img {
+    content: url("images/logo-icon.png"); } }
+@media (max-width: 823px) {
+  .navbar .navbar-nav #logo {
+    display: none; } }
+@media (min-width: 768px) {
+  .navbar-brand,
+  .navbar-nav li a {
+    line-height: 101px;
+    height: 101px;
+    padding-top: 0; }
+
+  .dropdown:hover .dropdown-menu {
+    display: block; } }
+/* Body
+--------------------------------------------------------------------------------------------------*/
+h1.banner {
+  width: 150%;
+  margin-left: -50%;
+  padding-left: 50%;
+  margin-bottom: 20px;
+  background-color: transparent !important;
+  background-image: url("images/headerbg.png");
+  background-repeat: no-repeat;
+  background-position: right center; }
+
+@media (max-width: 992px) {
+  h1.banner {
+    font-size: 44px; } }
+.header {
+  font-size: 56px; }
+  .header p {
+    margin: 0;
+    color: #E1E1DC; }
+  .header span {
+    color: #D85A1A;
+    font-weight: bold; }
+
+#splash {
+  height: 400px;
+  background: url("images/splash.jpg") no-repeat center top local;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.splash {
+  padding-bottom: 20px; }
+
+.content-area {
+  margin: 30px auto 0 auto; }
+
+.contMain {
+  background-image: none;
+  padding: 15px; }
+
+.container.wrapper {
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5); }
+
+.main {
+  width: 960px;
+  margin: 0 auto; }
+
+.section {
+  height: 200px;
+  padding: 20px 0 20px 0px;
+  margin-bottom: 20px;
+  clear: both !important; }
+
+.sectThree {
+  width: 275px;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 200px; }
+
+.sectThree p {
+  margin-top: 210px;
+  max-width: 255px; }
+
+.project {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: 0 -199px; }
+
+#projects {
+  position: relative; }
+  #projects .image {
+    width: 100%;
+    padding-bottom: 30px; }
+    #projects .image a {
+      display: block;
+      margin: 0 auto;
+      height: 200px;
+      width: 270px;
+      background-position: 0 -199px;
+      background-repeat: no-repeat; }
+  #projects .aerial > .image a {
+    background-image: url("images/aerial.png"); }
+  #projects .rover > .image a {
+    background-image: url("images/mars.png"); }
+  #projects .underwater > .image a {
+    background-image: url("images/water.png"); }
+  #projects .lquote {
+    position: absolute;
+    margin-left: -16px;
+    margin-top: -16px;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    line-height: 36px;
+    color: #D85A1A; }
+  #projects .rquote {
+    display: none;
+    float: right;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    line-height: 36px;
+    vertical-align: bottom;
+    color: #D85A1A; }
+  #projects .text {
+    height: 120px;
+    padding-left: 16px;
+    font-style: italic; }
+  #projects .ellipsis {
+    font-style: normal; }
+
+#mars {
+  background-image: url("images/mars.png");
+  padding: 0 0 20px 0; }
+  #mars:hover, #mars:focus {
+    background-position: 0 0; }
+
+#aerial {
+  background-image: url("images/aerial.png");
+  padding: 0; }
+  #aerial:hover, #aerial:focus {
+    background-position: 0 -1px; }
+
+#water {
+  background-image: url("images/water.png");
+  /* Russeree: larger pad on bot */
+  padding-bottom: 50px;
+  /* Russeree: Webkit Transitions */
+  transition: background-position .0s;
+  -webkit-transition: background-position .0s;
+  /* Safari */ }
+  #water:hover, #water:focus {
+    background-position: 0 -2px; }
+
+/* Footer
+--------------------------------------------------------------------------------------------------*/
+#footer.wrapper {
+  width: 100%;
+  min-width: 1100px;
+  height: 240px !important;
+  clear: both;
+  background-color: #E1E1DC;
+  border-top: 10px solid #D85A1A; }
+
+/*# sourceMappingURL=style.css.map */

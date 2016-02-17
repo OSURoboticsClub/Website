@@ -9,12 +9,10 @@
 
     <title><? echo $post->post_title . " | " . get_bloginfo(); ?></title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="<? echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="<? echo get_stylesheet_directory_uri() ?>/main.css" rel="stylesheet">
     <script src="<? echo get_stylesheet_directory_uri() ?>/js/jquery.min.js"></script>
+    <script src="<? echo get_stylesheet_directory_uri() ?>/js/bootstrap.min.js"></script>
+    <link href="<? echo get_stylesheet_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<? echo get_stylesheet_directory_uri() ?>/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -76,6 +74,4 @@
         </div>
         <!-- END LINKS -->
       </nav>
-   </div>
-
     <!-- END HEADER -->
