@@ -1,12 +1,28 @@
-/* ---- COLORS -----------------------------------------------------------------------------------*/
+// ---- Breakpoints --------------------------------------------------------------------------------
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+// ---- Colors -------------------------------------------------------------------------------------
 $white:      #FFFFFF;
 $offwhite:   #E1E1DC;
 $black:      #000000;
 $orange:     #FF6600;
 $darkorange: #D85A1A;
 
-/* ---- FONT STACK -------------------------------------------------------------------------------*/
-$font-stack: 'Soho', Chunkfive, Rockwell, Egyptienne, Egyptian, Georgia, Times, serif;
+// ---- Font Stack  --------------------------------------------------------------------------------
+$font-stack-serif: 'Soho', Chunkfive, Rockwell, Egyptienne, Egyptian, Georgia, Times, serif;
+$font-stack-sans:  "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
 
-/* ---- IMAGES -----------------------------------------------------------------------------------*/
+// ---- IMAGES -------------------------------------------------------------------------------------
+$logo-img-lrg: 'images/osurc.png';
+$logo-img-sml: 'images/logo-icon.png';
+
+$bg-tile-img: 'images/bgtile.png';
+
 $splash-img: 'images/splash.jpg';
+$banner-img: 'images/banner.png';
+
+$projects-aerial-img: 'images/aerial.png';
+$projects-rover-img:  'images/mars.png';
+$projects-water-img:  'images/water.png';

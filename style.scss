@@ -9,14 +9,41 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * /
 
-/* Notes
-----------------------------------------------------------------------------------------------------
-1. Do not use .wrapper for anything. This tag is used as a dummy class for greater precision w/
-   container selectors.
+// Guidelines
+// ------------------------------------------------------------------------------------------------
+// 1. Do not use .wrapper for anything. This tag is used as a dummy class for greater precision w/
+//    container selectors.
+// 2. Do not leave superfluous styling/elements anywhere. They will be misinterpreted for being
+//    essential and will aggregate over time into a web tumor.
+// 3. When you make a change any new task you run into must be completed before implimenting the new
+//    change.
+// 4. You cannot apply "bandaids" or use "quick fixes".
+// 5. Bootstrap is your friend. Use it.
+// 6. Look into SASS nesting and use it when appropriate.
+// 7. SASS will automatically remove comments starting w/ "//".
+// 8. The only time the style tag can be used is for elements loaded through wordpress, i.e., pages.
+//    This is because there is no other way to style these individually.
+// ---
 
-*/
+//  General Layout
+// -------------------------------------------------------------------------------------------------
+// The general layout of content is as follows:
+// [wrapper]
+//   [...]
+//   [section]
+//     [row]
+//       [col-sz-xx]
+//         [element][/element]
+//         [...]
+//         [element][/element]
+//       [/col-sz-xx]
+//     [/row]
+//   [/section]
+//   [...]
+// [/wrapper]
+// ---
 
-/* Styling
+/* Settings
 --------------------------------------------------------------------------------------------------*/
 @import 'settings';
 
@@ -34,10 +61,11 @@ html {
 
 body {
   height: 100%;
-  background-image: url('images/mainBG2.png');
+  background-image: url($bg-tile-img);
   background-repeat: repeat;
   padding-top: 0px;
   color: $offwhite !important;
+  font-size: 16px;
 }
 
 a {
@@ -48,12 +76,12 @@ a {
 }
 
 h1, h2, h3, h4 {
-  font-family: $font-stack;
+  font-family: $font-stack-serif;
   color: $offwhite;
   line-height:1em;
 }
 
-h1 {
+h1 { // TODO: Revist these possibly
   font-size: 72px;
   font-weight: 700;
   padding: 20px 0 25px 0;
@@ -69,7 +97,7 @@ h3 {
   margin-bottom:10px;
   padding-bottom: 6px;
   font-size: 24px;
-  border-bottom: 1px solid $offwhite;
+  border-bottom: 2px solid $offwhite;
 }
 
 h4 {
@@ -80,9 +108,31 @@ ul {
   list-style: none;
 }
 
-img.border {
+img.border { // TODO: These should go in a style.css and move everything else to $(page).css
   border: 5px solid $offwhite;
 }
+
+.container.wrapper {
+  margin: 0 auto;
+}
+
+h1.banner {
+  width: 150%;
+  margin-left: -39%;
+  padding-left: 39%;
+  margin-bottom: 0;
+  background-color: transparent !important;
+  background-image: url($banner-img);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+@media (max-width: $screen-md-min) {
+  h1.banner {
+    font-size: 44px;
+  }
+}
+
 /* @Override Bootstrap
 --------------------------------------------------------------------------------------------------*/
 .container-fullwidth {
@@ -105,8 +155,23 @@ img.border {
     display: inline-block;
     padding-top: 8px;
     float: none;
-    font-family: $font-stack;
+    font-family: $font-stack-serif;
     font-size: 18px;
+
+    #logo {
+      padding: 0 20px;
+
+      a {
+        width: 320px;
+        height: 101px;
+        padding: 0;
+        background: url($logo-img-lrg) no-repeat center center local;
+        -webkit-background-size: contain;
+           -moz-background-size: contain;
+             -o-background-size: contain;
+                background-size: contain;
+        }
+    }
 
     .dropdown-menu li a {
       line-height: 40px;
@@ -137,8 +202,9 @@ img.border {
 }
 
 @media (max-width: 1051px) and (min-width: 824px) {
-  .navbar .navbar-nav #logo img {
-    content: url("images/logo-icon.png");
+  .navbar .navbar-nav #logo a {
+    background-image: url($logo-img-sml);
+    width: 92px;
   }
 }
 
@@ -148,7 +214,7 @@ img.border {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
   .navbar-brand,
   .navbar-nav li a {
     line-height: 101px;
@@ -161,105 +227,67 @@ img.border {
   }
 }
 
-/* Body
+/* Content
 --------------------------------------------------------------------------------------------------*/
-h1.banner {
-  width: 150%;
-  margin-left: -50%;
-  padding-left: 50%;
-  margin-bottom: 20px;
-  background-color: transparent !important;
-  background-image: url('images/headerbg.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-
-@media (max-width: 992px) {
-  h1.banner {
-    font-size: 44px;
-  }
+#content {
+  padding-bottom: 20px;
+  background: rgba(0,0,0,0.5);
 }
 
 .header {
+  padding: 15px;
   font-size: 56px;
+  line-height: 56px;
 
   p {
     margin: 0;
     color: $offwhite;
+    font-style: normal;
   }
   span {
     color: $darkorange;
+    font-style: italic;
     font-weight: bold;
   }
 }
 
 #splash {
-  height: 400px;
+  position: relative;
+  height: 420px;
+  border: 2px solid $offwhite;
   background: url($splash-img) no-repeat center top local;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+
+  span#credit {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    padding: 2px;
+    background-color: rgba(255,255,255,0.4);
+    color: $black;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 12px;
+  }
 }
 
 .splash {
   padding-bottom: 20px;
 }
 
-.content-area {
-  margin: 30px auto 0 auto;
-}
 
-.contMain { // TODO: Finish moving this
-  background-image: none;
-  padding: 15px;
-}
-
-.container.wrapper {
-  margin: 0 auto;
-  background: rgba(0,0,0,0.5);
-}
-
-#projects.wrapper {
-}
-
-.main {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.section {
-  height: 200px;
-  padding: 20px 0 20px 0px;
-  margin-bottom: 20px;
-  clear: both !important;
-}
-
-.sectThree {
-  width: 275px;
-  float: left;
-  margin-right:40px;
-  margin-bottom: 200px;
-}
-
-
-.sectThree p {
-  margin-top: 210px;
-  max-width: 255px;
-}
-
-.project {
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: 0 -199px;
-}
-
+/* Projects
+--------------------------------------------------------------------------------------------------*/
 #projects {
   position: relative;
+  padding: 20px 0;
+  color: $offwhite;
 
   .image {
-    width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 
     a {
       display: block;
@@ -271,9 +299,20 @@ h1.banner {
     }
   }
 
-  .aerial     > .image a{ background-image: url("images/aerial.png"); }
-  .rover      > .image a{ background-image: url("images/mars.png"); }
-  .underwater > .image a{ background-image: url("images/water.png"); }
+  .aerial.image > a{
+    background-image: url($projects-aerial-img);
+    &:hover, &:focus { background-position:0 -1px; }
+  }
+
+  .rover.image > a {
+    background-image: url($projects-rover-img);
+    &:hover, &:focus { background-position:0 0; }
+  }
+
+  .underwater.image > a {
+    background-image: url($projects-water-img);
+    &:hover, &:focus { background-position: 0 -2px; }
+   }
 
   .lquote {
     position: absolute;
@@ -286,17 +325,15 @@ h1.banner {
   }
 
   .rquote {
-    display: none;
     float: right;
     font-size: 36px;
-    font-family: Arial, sans-serif;
+    font-family: $font-stack-sans;
     line-height: 36px;
     vertical-align: bottom;
     color: $darkorange;
   }
 
   .text {
-    height: 120px;
     padding-left: 16px;
     font-style: italic;
   }
@@ -306,38 +343,38 @@ h1.banner {
   }
 }
 
-#mars {
-  background-image:url("images/mars.png");
-  padding:0 0 20px 0;
+@media (max-width: $screen-lg-min) {
+  #projects {
+    .blurbs {
+      display: none;
+    }
 
-  &:hover, &:focus { background-position:0 0; }
-}
-
-#aerial {
-  background-image:url("images/aerial.png");
-  padding:0;
-
-  &:hover, &:focus { background-position:0 -1px; }
-}
-
-#water {
-  background-image:url("images/water.png");
-  /* Russeree: larger pad on bot */
-  padding-bottom: 50px;
-  /* Russeree: Webkit Transitions */
-  transition: background-position .0s;
-  -webkit-transition: background-position .0s; /* Safari */
-
-  &:hover, &:focus { background-position: 0 -2px; }
+    .links {
+      display: none;
+    }
+  }
 }
 
 /* Footer
 --------------------------------------------------------------------------------------------------*/
-#footer.wrapper {
+footer {
   width: 100%;
   min-width: 1100px;
-  height: 240px !important;
-  clear: both;
   background-color: $offwhite;
   border-top: 10px solid $darkorange;
+  color: $black;
+  font-size: 14px;
+
+
+   h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+    font-size: 24px;
+    color: $black;
+  }
+
+  ul {
+  }
 }

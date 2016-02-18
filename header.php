@@ -41,7 +41,6 @@
             <!-- LOGO -->
             <li id="logo">
               <a href="<? echo esc_url( home_url( '/' ) ); ?>">
-                <img src="<? echo get_stylesheet_directory_uri() ?>/images/logo-old.png">
               </a>
             </li>
             <!-- END LOGO -->
