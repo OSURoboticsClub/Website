@@ -5,18 +5,25 @@ $screen-lg-min: 1200px;
 
 // ---- Colors -------------------------------------------------------------------------------------
 $white:      #FFFFFF;
-$offwhite:   #E1E1DC;
+$offwhite:   #EEEEEE;
+$gray:       #7F7F7F;
 $black:      #000000;
 $orange:     #FF6600;
-$darkorange: #D85A1A;
+$darkorange: #E65100;
 
 // ---- Font Stack  --------------------------------------------------------------------------------
-$font-stack-serif: 'Soho', Chunkfive, Rockwell, Egyptienne, Egyptian, Georgia, Times, serif;
-$font-stack-sans:  "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:100italic,200,400italic,300,400,500,700,900');
+@font-face {
+  font-family: 'Roboto Black';
+  src: url('fonts/Roboto-Black.ttf');
+  src: url('fonts/Roboto-Black.ttf') format('truetype');
+}
+
+$font-stack-title: 'Roboto Black', Helvetica, Arial, Verdana, sans-serif;
+$font-stack-sans: 'Roboto', Helvetica, Arial, Verdana, sans-serif;
 
 // ---- IMAGES -------------------------------------------------------------------------------------
-$logo-img-lrg: 'images/osurc.png';
-$logo-img-sml: 'images/logo-icon.png';
+$logo-img-lrg: 'images/logo.png';
 
 $bg-tile-img: 'images/bgtile.png';
 

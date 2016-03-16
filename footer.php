@@ -9,13 +9,12 @@
                   <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/about">About</a></li>
                   <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/projects">Projects</a></li>
                   <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/competitions">Competitions</a></li>
-                  <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/gallery">Gallery</a></li>
-                  <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/contact">Contact</a></li>
                 </ul>
                 <ul class="col-md-6">
                   <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/rover">Mars Rover</a></li>
                   <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/aerial">Autonomous Aerial</a></li>
                   <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/underwater">Underwater ROV</a></li>
+                  <li><a href="<? echo esc_url( home_url( '/' ) ); ?>/contact">Contact</a></li>
                 </ul>
               </div>
             </div>

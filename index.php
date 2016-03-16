@@ -5,21 +5,21 @@
 ?>
     <!-- CONTENT -->
     <div id="content" class="container wrapper">
+    <!-- SPLASH IMAGE -->
+    <div class="splash row">
+      <div class="col-md-12">
+        <div id="splash">
+          <span id="credit">Pictured: Dylan Thrush, Billy Edwards, OSU President Ed Ray, Nick McComb, Matthew Shuman</span>
+        </div>
+      </div>
+    </div>
       <!-- PAGE TITLE -->
       <div class="row">
           <div class="header col-md-12">
-            <p><span>Welcome</span> to the OSU Robotics Club website!</p>
+            <p><span>Welcome</span> to the OSU Robotics Club Website!</p>
           </div>
       </div>
       <!-- END PAGE TITLE -->
-      <!-- SPLASH IMAGE -->
-      <div class="splash row">
-        <div class="col-md-12">
-          <div id="splash">
-            <span id="credit">Pictured: Lorem ipsum dolor sit amet.</span>
-          </div>
-        </div>
-      </div>
       <!-- END SPLASH IMAGE -->
       <!-- POSTS -->
       <div class="row">
@@ -41,7 +41,7 @@
       <!-- FEATURED PROJECTS BANNER -->
       <div class="row">
         <div class="col-md-12">
-          <h1 class="banner">Featured Projects:</h1>
+          <h1 class="banner">Featured Projects</h1>
         </div>
       </div>
       <!-- END FEATURED PROJECTS BANNER -->

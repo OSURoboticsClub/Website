@@ -1,14 +1,10 @@
 <?
 /**
- * Template Name: Outreach
+ * Template Name: Member Projects Page
  */
+
 get_header(); ?>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3><? echo $post->post_title ?></h3>
-          </div>
-        </div>
         <div class="row">
           <div class="col-md-12">
             <?/* Displays WordPress posts for the page */
@@ -19,4 +15,4 @@ get_header(); ?>
         </div>
       </div>
 
-<? get_footer();
+<? get_footer(); ?>

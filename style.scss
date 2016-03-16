@@ -47,46 +47,45 @@
 --------------------------------------------------------------------------------------------------*/
 @import 'settings';
 
-@font-face {
-  font-family: "Soho";
-  src: url('fonts/sohomedium.otf') format("opentype");
-}
-
 /* Global Elements
 --------------------------------------------------------------------------------------------------*/
 html {
   min-height: 100%;
   position: relative;
+  font-size: 16px;
 }
 
 body {
   height: 100%;
-  background-image: url($bg-tile-img);
-  background-repeat: repeat;
-  padding-top: 0px;
+  background-color: $offwhite;
   color: $offwhite !important;
-  font-size: 16px;
+  font-family: $font-stack-sans;
 }
 
 a {
+  padding: 0;
   color: $darkorange;
   text-decoration: none;
 
-  &:hover { color: $offwhite; }
+  &:hover {
+    color: $darkorange;
+  }
 }
 
 h1, h2, h3, h4 {
-  font-family: $font-stack-serif;
+  font-family: $font-stack-sans;
   color: $offwhite;
   line-height:1em;
 }
 
 h1 { // TODO: Revist these possibly
-  font-size: 72px;
-  font-weight: 700;
-  padding: 20px 0 25px 0;
+  padding: 16px 0 29px 0;
   margin-bottom: 10px;
   background-color: $darkorange;
+  font-family: $font-stack-title;
+  font-size: 62px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -107,6 +106,8 @@ h4 {
 ul {
   list-style: none;
 }
+
+nav { margin: 0; }
 
 img.border { // TODO: These should go in a style.css and move everything else to $(page).css
   border: 5px solid $offwhite;
@@ -133,6 +134,18 @@ h1.banner {
   }
 }
 
+#site {
+  background-image: url($bg-tile-img);
+  background-repeat: repeat;
+}
+
+.title { // TODO: Unused
+  color: $darkorange;
+  font-family: $font-stack-title;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* @Override Bootstrap
 --------------------------------------------------------------------------------------------------*/
 .container-fullwidth {
@@ -145,25 +158,32 @@ h1.banner {
   padding: 0; margin: 0px 5px 10px 5px !important;
 }
 
+header {
+  position: relative;
+  z-index: 100;
+  box-shadow: 0px 3px 1px rgba(0,0,0,0.2);
+}
+
 .navbar {
+  margin: 0px; // @Override Bootstrap
   background-color: $offwhite;
   border-radius: 0px;
   border-top: 10px solid $darkorange;
-  margin: 0px; // @Override Bootstrap
 
   .navbar-nav {
     display: inline-block;
-    padding-top: 8px;
-    float: none;
-    font-family: $font-stack-serif;
-    font-size: 18px;
+    width: 100%;
+    padding: 6px 0px 4px 0px;
+    font-family: $font-stack-sans;
+    font-size: 1em;
+    font-weight: 400;
 
     #logo {
-      padding: 0 20px;
+      float: left;
 
       a {
-        width: 320px;
-        height: 101px;
+        width: 256px;
+        height: 80px;
         padding: 0;
         background: url($logo-img-lrg) no-repeat center center local;
         -webkit-background-size: contain;
@@ -173,10 +193,17 @@ h1.banner {
         }
     }
 
-    .dropdown-menu li a {
-      line-height: 40px;
-      height: 40px;
-      padding-top: 0;
+    .dropdown-menu {
+      li {
+        float: none;
+      }
+
+      li a {
+        padding-top: 0;
+        font-weight: 400;
+        line-height: 40px;
+        height: 40px;
+      }
     }
   }
 }
@@ -186,40 +213,25 @@ h1.banner {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #333 !important;
+  color: $gray !important;
 }
 
-.brand {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  margin: auto;
-}
-
-.navbar-brand {
-  height: auto !important;
-}
-
-@media (max-width: 1051px) and (min-width: 824px) {
-  .navbar .navbar-nav #logo a {
-    background-image: url($logo-img-sml);
-    width: 92px;
-  }
-}
-
-@media (max-width: 823px) {
+@media (max-width: 1051px) {
   .navbar .navbar-nav #logo {
     display: none;
   }
 }
 
 @media (min-width: $screen-sm-min) {
-  .navbar-brand,
-  .navbar-nav li a {
-    line-height: 101px;
-    height: 101px;
-    padding-top: 0;
+  .navbar-nav {
+    li {
+      float: right;
+    }
+    li a {
+      line-height: 80px;
+      height: 80px;
+      padding-top: 0;
+    }
   }
 
   .dropdown:hover .dropdown-menu {
@@ -230,31 +242,32 @@ h1.banner {
 /* Content
 --------------------------------------------------------------------------------------------------*/
 #content {
+  position: relative;
   padding-bottom: 20px;
   background: rgba(0,0,0,0.5);
 }
 
 .header {
-  padding: 15px;
-  font-size: 56px;
-  line-height: 56px;
+  padding: 8px;
+  font-size: 46px;
+  line-height: 46px;
 
   p {
     margin: 0;
     color: $offwhite;
-    font-style: normal;
+    font-family: $font-stack-sans;
   }
   span {
     color: $darkorange;
-    font-style: italic;
+    font-family: $font-stack-title;
     font-weight: bold;
+    text-transform: uppercase;
   }
 }
 
 #splash {
   position: relative;
   height: 420px;
-  border: 2px solid $offwhite;
   background: url($splash-img) no-repeat center top local;
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -266,16 +279,44 @@ h1.banner {
     bottom: 2px;
     right: 2px;
     padding: 2px;
-    background-color: rgba(255,255,255,0.4);
-    color: $black;
+    background-color: rgba(0,0,0,0.4);
+    color: #FFF;
+    font-family: $font-stack-sans;
     font-size: 12px;
-    font-style: italic;
+    font-weight: 200;
     line-height: 12px;
+    border-radius: 1px;
   }
 }
 
 .splash {
-  padding-bottom: 20px;
+  padding-bottom: 12px;
+}
+
+.posts {
+  font-family: $font-stack-sans;
+  font-size: 1em;
+  line-height: 1.7em;
+
+  a { color: $orange; }
+  h3 {
+    font-family: $font-stack-title;
+    text-transform: uppercase;
+  }
+  ol {
+    counter-reset: item;
+    padding-left: 22px;
+  }
+  ol li { display: block }
+  ol li:before {
+      content: counter(item) ".";
+      padding-right: 8px;
+      counter-increment: item;
+      font-family: $font-stack-sans;
+      font-weight: bold;
+  }
+  ul { list-style-type: disc; }
+  p  { margin: 0; }
 }
 
 
@@ -321,7 +362,7 @@ h1.banner {
     font-size: 36px;
     font-family: Arial, sans-serif;
     line-height: 36px;
-    color: $darkorange;
+    color: $orange;
   }
 
   .rquote {
@@ -330,7 +371,7 @@ h1.banner {
     font-family: $font-stack-sans;
     line-height: 36px;
     vertical-align: bottom;
-    color: $darkorange;
+    color: $orange;
   }
 
   .text {
@@ -361,20 +402,42 @@ footer {
   width: 100%;
   min-width: 1100px;
   background-color: $offwhite;
-  border-top: 10px solid $darkorange;
   color: $black;
-  font-size: 14px;
-
+  border-top: 10px solid $darkorange;
+  box-shadow: 0px -3px 1px rgba(0,0,0,0.2);
 
    h3 {
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 12px;
+    margin-bottom: 8px;
     padding: 0;
     border: none;
-    font-size: 24px;
+    font-family: $font-stack-sans;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
     color: $black;
   }
 
-  ul {
+  li,p {
+    font-size: 0.9em;
   }
+}
+
+// TODO
+#about {
+  img {
+    border: 1px solid #FFF;
+  }
+  p {
+    margin-bottom: 2px;
+  }
+  ul {
+    padding: 0px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 5px;
+  }
+
 }
