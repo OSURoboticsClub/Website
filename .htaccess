@@ -1,40 +1,11 @@
 # BEGIN WordPress
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /osurc/
-RewriteRule ^index\.php$ - [L]
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /osurc/index.php [L]
+RewriteRule . /index.php [L]
 </IfModule>
-
-# Files that are too big to upload via Wordpress
-# TODO: Store in /files
-Redirect 301 /osurc/aerial/content/OSUaerial2012.pdf /osurc/wp-content/uploads/2014/09/OSUaerial2012.pdf
-Redirect 301 /osurc/images/roverdisplay.pdf /osurc/wp-content/uploads/2014/09/roverdisplay.pdf
-Redirect 301 "/osurc/files/Aerial Poster 2014.pdf" "/osurc/wp-content/uploads/2014/09/Aerial Poster 2014.pdf"
-Redirect 301 /osurc/proposals/fall2013/UnderwaterProposal.pdf /osurc/wp-content/uploads/2014/09/UnderwaterProposal.pdf
-Redirect 301 "/osurc/urc/report/2010 Oregon State University Mars Rover CAD Model.PDF" "/osurc/wp-content/uploads/2014/09/2010 Oregon State University Mars Rover CAD Model.PDF"
-
-# Reorganized osurc directory
-Redirect 301 /osurc/2011_tshirt_design_rules.pdf /osurc/files/2011_tshirt_design_rules.pdf
-Redirect 301 /osurc/OSURCConstitution2011.pdf /osurc/files/OSURCConstitution2011.pdf
-Redirect 301 /osurc/docs /osurc/files
-Redirect 301 /osurc/static/logo.png /osurc/images/logo.png
-Redirect 301 /osurc/static/osurc_logo_hi_res_black_200.png /osurc/images/osurc_logo_hi_res_black_200.png
-Redirect 301 /osurc/ENGR299 /osurc/files/ENGR299
-Redirect 301 /osurc/fpga /osurc/files/fpga
-Redirect 301 /osurc/gallery /osurc/images/gallery
-Redirect 301 /osurc/galleryThumbs /osurc/images/galleryThumbs
-Redirect 301 /osurc/material /osurc/files/material
-Redirect 301 /osurc/docs /osurc/files
-Redirect 301 /osurc/ork /osurc/files/ork
-Redirect 301 /osurc/photos /osurc/images
-Redirect 301 /osurc/proposals /osurc/files/proposals
-Redirect 301 /osurc/resources /osurc/files/resources
-Redirect 301 /osurc/css /osurc/static/css
-Redirect 301 /osurc/fonts /osurc/static/fonts
-Redirect 301 /osurc/js /osurc/static/js
-
 
 # END WordPress
