@@ -27,3 +27,8 @@ The OSU Robotics Club website depends on Bootstrap, Fullcalendar, JQuery, Sass, 
 * [Page Featured Image](https://wordpress.org/plugins/page-featured-image/)
 * Shortcode Exec PHP (abandoned)
 * [Social Media Widget](https://wordpress.org/plugins/social-media-widget/)
+
+### Media
+* [Google Fonts Roboto](https://www.google.com/fonts/specimen/Roboto)
+* [Google Fonts Roboto 
+Black](https://github.com/OSURoboticsClub/Website/blob/master/fonts/Roboto-Black.ttf)
