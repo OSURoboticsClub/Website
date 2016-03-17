@@ -67,7 +67,7 @@
                     <li><a href="<? echo $topdir; ?>rover">Mars Rover</a></li>
                     <li><a href="<? echo $topdir; ?>aerial">Autonomous Aerial</a></li>
                     <li><a href="<? echo $topdir; ?>underwater">Underwater ROV</a></li>
-                    <li><a href="<? echo $topdir; ?>memberProjects">Member Projects</a></li>
+                    <li><a href="<? echo $topdir; ?>member-projects">Member Projects</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">

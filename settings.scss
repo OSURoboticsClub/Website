@@ -15,21 +15,21 @@ $darkorange: #E65100;
 @import url('https://fonts.googleapis.com/css?family=Roboto:100italic,200,400italic,300,400,500,700,900');
 @font-face {
   font-family: 'Roboto Black';
-  src: url('fonts/Roboto-Black.ttf');
-  src: url('fonts/Roboto-Black.ttf') format('truetype');
+  src: url('http://osurobotics.club/wp-content/themes/osurc/fonts/Roboto-Black.ttf');
+  src: url('http://osurobotics.club/wp-content/themes/osurc/fonts/Roboto-Black.ttf') format('truetype');
 }
 
 $font-stack-title: 'Roboto Black', Helvetica, Arial, Verdana, sans-serif;
 $font-stack-sans: 'Roboto', Helvetica, Arial, Verdana, sans-serif;
 
 // ---- IMAGES -------------------------------------------------------------------------------------
-$logo-img-lrg: 'images/logo.png';
+$logo-img-lrg: 'http://osurobotics.club/wp-content/themes/osurc/images/logo.png';
 
-$bg-tile-img: 'images/bgtile.png';
+$bg-tile-img: 'http://osurobotics.club/wp-content/themes/osurc/images/bgtile.png';
 
-$splash-img: 'images/splash.jpg';
-$banner-img: 'images/banner.png';
+$splash-img: 'http://osurobotics.club/wp-content/themes/osurc/images/splash.jpg';
+$banner-img: 'http://osurobotics.club/wp-content/themes/osurc/images/banner.png';
 
-$projects-aerial-img: 'images/aerial.png';
-$projects-rover-img:  'images/mars.png';
-$projects-water-img:  'images/water.png';
+$projects-aerial-img: 'http://osurobotics.club/wp-content/themes/osurc/images/aerial.png';
+$projects-rover-img:  'http://osurobotics.club/wp-content/themes/osurc/images/mars.png';
+$projects-water-img:  'http://osurobotics.club/wp-content/themes/osurc/images/water.png';

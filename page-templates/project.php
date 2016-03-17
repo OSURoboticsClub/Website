@@ -2,7 +2,7 @@
 /*
 Template Name: Project
 */?>
-      <div class="container">
+      <div id="projects" class="container">
         <div class="row">
           <div class="col-md-12">
             <h3><? echo $post->post_title ?></h3>

@@ -7,6 +7,7 @@ get_header(); ?>
       <!-- POSTS -->
       <div class="row">
         <div class="col-md-12">
+          <h3><? echo $post->post_title ?></h3>
           <?/* Displays WordPress posts for the Calendar page */
             while ( have_posts() ) : the_post();
               the_content();
