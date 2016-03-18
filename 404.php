@@ -1,6 +1,6 @@
 <?
 /**
- * Template Name: About
+ * Template Name: 404 Page
  */
 
 get_header(); ?>
