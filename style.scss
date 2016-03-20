@@ -234,7 +234,7 @@ header {
       padding-top: 0;
     }
   }
-  
+
   .dropdown:hover .dropdown-menu {
     display: block;
   }
@@ -243,6 +243,12 @@ header {
 /* Content
 --------------------------------------------------------------------------------------------------*/
 #content {
+  position: relative;
+  padding-bottom: 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+.content {
   position: relative;
   padding-bottom: 20px;
   background: rgba(0,0,0,0.5);
@@ -470,5 +476,11 @@ footer {
   .text {
     height: 100%;
     color: $offwhite;
+  }
+}
+
+#store {
+  .header {
+    text-align: center;
   }
 }

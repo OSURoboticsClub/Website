@@ -1,11 +1,13 @@
 # BEGIN WordPress
 
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+  RewriteEngine On
+#  RewriteCond %{HTTP_HOST} ^osurobotics\.club$
+#  RewriteRule ^store.osurobotics.club? http://osurobotics.club/store [QSA,L,R=301]
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
