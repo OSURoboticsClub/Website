@@ -12,9 +12,14 @@
 body {
 	margin: 0;
 	padding: 0;
-  background-color: $black;
 	font-family: $font-stack-sans;
 	font-size: 14px;
+}
+
+.wrapper {
+  position: relative;
+  padding: 10px;
+  background-color: $black;
 }
 
 #loading {
@@ -24,25 +29,16 @@ body {
 	right: 10px;
 }
 
-.calendar {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	clear: both;
-}
-
 #image-loader {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	padding: 8px;
 	box-sizing: border-box;
 	background: $black;
 
   #banner {
   	height: 100px;
-  	padding: 10px;
+    padding-bottom: 10px;
   	background-color: $black;
     clear: both;
 
@@ -50,7 +46,7 @@ body {
       position: relative;
       height: 100px;
       float: left;
-      width: 33%;
+      width: 33.2%;
     }
 
     div > span {
@@ -58,28 +54,35 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family: $font-stack-title;
-      font-weight: bold;
-      font-size: 40px;
+      font-family: $font-stack-sans;
+      font-size: 60px;
     }
+    #time {
+      float: right;
 
+      span {
+        left: auto;
+        right: 0%;
+        transform: translate(0%, -50%);
+      }
+    }
     img.logo {
       height: 100px;
+      //margin: -10px 0 0 -10px;
     }
   }
 
   #splash {
-    background: url("../images/clab-calendar/splash.jpg") no-repeat center center fixed;
+    margin-bottom: 10px;
+    background: url("../images/clab-calendar/splash.jpg") no-repeat center top border-box;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
 }
 
 #calendar {
-	position: absolute;
-	margin: 0 8px 8px 8px;
   background-color: $offwhite;
   font-family: $font-stack-sans;
 

@@ -9,7 +9,6 @@ jQuery( document ).ready( function($) {
     defaultView: 'agendaWeek',
     minTime: "08:00:00",
     googleCalendarApiKey: 'AIzaSyAmTElrUEA8l4HcvG-Nup46_Oq1uhbsSYE',
-
     // US Holidays
     events: 'b8ths75dtv3jnkjja6ijq28jl8@group.calendar.google.com',
 
@@ -24,9 +23,9 @@ jQuery( document ).ready( function($) {
       $('#loading').toggle(bool);
 
       if (bool) {
-        var height = $("#calendar").height();
-        var margin = $(document).height()-height-parseInt($("#calendar").css("margin-bottom"));
-        set_height(margin);
+        var height = $(window).height() - $("#calendar").height();
+        height    -= 2*parseInt($('.wrapper').css('padding-top'));
+        set_height( height );
       }
     }
 
@@ -35,7 +34,7 @@ jQuery( document ).ready( function($) {
     var yyyy = this.getFullYear().toString();
     var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based
     var dd  = this.getDate().toString();
-    return yyyy + "/" + (mm[1]?mm:"0"+mm[0]) + "/" + (dd[1]?dd:"0"+dd[0]); // padding
+    return (mm[1]?mm:"0"+mm[0]) + "/" + (dd[1]?dd:"0"+dd[0]) + "/" + yyyy; // padding
   };
 
   Date.prototype.hhmmss = function() {
@@ -58,23 +57,27 @@ jQuery( document ).ready( function($) {
   };
 
   $('#date').text( new Date().yyyymmdd() );
-  
-  $('#time').text(new Date().hhmmss() );
+
+  $('#time > span').text(new Date().hhmmss() );
   setInterval(function() {
-    $('#time').text(new Date().hhmmss() );
+    $('#time > span').text(new Date().hhmmss() );
   }, 1000);
 
   function set_height(height) {
     var seconds = 30;
     var ms = seconds * 1000;
-                      var refresh_ms = 21600*1000;
+    var refresh_ms = 21600*1000;
+    $('#image-loader').css({
+      "height": height,
+    });
+    /*
     $("#image-loader").css({
       "height": height - parseInt($("#calendar").css("margin-bottom")),
       "margin-bottom": parseInt($("#calendar").css("margin-bottom")),
     });
     $("#splash").css({
-      "height": height - parseInt($("#calendar").css("margin-bottom")) - 100,
-    });
+      "height": height - parseInt($("#calendar").css("margin-bottom")) - 118,
+    });*/
 
     var i = 1;
 

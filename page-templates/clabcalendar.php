@@ -6,12 +6,22 @@
 $upload_dir = wp_upload_dir();
 $calendar_dir = $upload_dir["basedir"] . "/calendar/";
 
+$basedir = content_url() . "uploads/calendar/";
+
 foreach ( glob($calendar_dir.'*') as $filename ) {
   $images[] = basename($filename);
+  list($width, $height) = getimagesize( $filename );
+  $dimensions[] = ($width >= $height);
 }
 
-$js_array = json_encode($images);
-echo "<script>var images = ". $js_array . "; var basedir = \"" . content_url() . "/uploads/calendar/\";</script>"; ?>
+$imgs_array = json_encode($images);
+$dims_array = json_encode($dimensions);
+echo "<script>
+        var images = " . $imgs_array . ";
+        var dimensions = " . $dims_array . ";
+        var basedir = \"" . content_url() . "/uploads/calendar/\";
+      </script>";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,22 +38,24 @@ echo "<script>var images = ". $js_array . "; var basedir = \"" . content_url() .
   </head>
   <body>
 
-  	<div id='loading'>loading...</div>
-  	<div id="image-loader">
-  		<div id="banner">
-        <div>
-          <img class='logo' src="<?php echo get_stylesheet_directory_uri() ?>/images/clab-calendar/logo.png"></img>
+    <div class="wrapper">
+    	<div id='loading'>loading...</div>
+    	<div id="image-loader">
+    		<div id="banner">
+          <div>
+            <img class='logo' src="<?php echo get_stylesheet_directory_uri() ?>/images/clab-calendar/logo.png"></img>
+          </div>
+          <div>
+            <span id="date"></span>
+          </div>
+          <div id="time">
+            <span></span>
+          </div>
         </div>
-        <div>
-          <span id="date">DATE</span>
-        </div>
-        <div>
-          <span id="time"></span>
-        </div>
-      </div>
-  		<div id="splash"></div>
-  	</div>
-  	<div id='calendar'></div>
+    		<div id="splash"></div>
+    	</div>
+    	<div id='calendar'></div>
+    </div>
 
   </body>
 </html>
