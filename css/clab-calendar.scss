@@ -13,7 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
   background-color: $black;
-	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-family: $font-stack-sans;
 	font-size: 14px;
 }
 
@@ -44,10 +44,29 @@ body {
   	height: 100px;
   	padding: 10px;
   	background-color: $black;
-  	text-align: right;
-  }
+    clear: both;
 
-  #banner > .logo { height: 100px; }
+    div {
+      position: relative;
+      height: 100px;
+      float: left;
+      width: 33%;
+    }
+
+    div > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $font-stack-title;
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    img.logo {
+      height: 100px;
+    }
+  }
 
   #splash {
     background: url("../images/clab-calendar/splash.jpg") no-repeat center center fixed;
@@ -61,7 +80,30 @@ body {
 #calendar {
 	position: absolute;
 	margin: 0 8px 8px 8px;
-  background-color: $white;
+  background-color: $offwhite;
+  font-family: $font-stack-sans;
+
+  /* FullCalendar Themeing */
+  .fc-center h2 {
+    font-family: $font-stack-title;
+    text-transform: uppercase;
+    color: $black !important;
+    display: block !important;
+    font-size: 1.5em !important;
+    -webkit-margin-before: 0px !important;
+    -webkit-margin-after: 0px !important;
+    -webkit-margin-start: 0px !important;
+    -webkit-margin-end: 0px !important;
+    font-weight: bold !important;
+  }
+
+  .fc-view-container {
+    background-color: $white;
+  }
+
+  thead, .fc-time, .fc-axis.fc-widget-content {
+    color: $black !important;
+  }
 }
 
 .fc-right {

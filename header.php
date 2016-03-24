@@ -22,13 +22,13 @@
        * the calendar would cause issues while the page loads. This is because the links/scripts
        * would be located outside of the <head> tag. As of HTML5 it is okay to do this, but don't.
        * Author: Gzxgzxgzx */
-      if ( $title == "Calendar" ) {
+      if ( $title == "Calendar" || $title == "CLAB Calendar" ) {
         echo "<script src='" . $themedir . "/js/moment.min.js'></script>
               <script src='" . $themedir . "/js/fullcalendar.min.js'></script>
               <script src='" . $themedir . "/js/gcal.js'></script>
               <script src='" . $themedir . "/js/calendar.js'></script>
-              <link href='" . $themedir . "/css/fullcalendar.css' rel='stylesheet' />
-              <link href='" . $themedir . "/css/calendar.min.css' rel='stylesheet' />";
+              <link href='"  . $themedir . "/css/fullcalendar.css' rel='stylesheet' />
+              <link href='"  . $themedir . "/css/calendar.min.css' rel='stylesheet' />";
        } ?>
   </head>
 
