@@ -52,7 +52,14 @@ echo "<script>
             <span></span>
           </div>
         </div>
-    		<div id="splash"></div>
+    		<div id="splash">
+          <div class="posts">
+            <?/* Displays WordPress posts for the page */
+              while ( have_posts() ) : the_post();
+                the_content();
+              endwhile; ?>
+          </div>
+        </div>
     	</div>
     	<div id='calendar'></div>
     </div>

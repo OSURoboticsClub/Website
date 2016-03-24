@@ -1,6 +1,6 @@
 /* Sass
 -------------------------------------------------------------------------------------------*/
-@import '../style';
+@import '../settings';
 
 /* Theme
 -------------------------------------------------------------------------------------------*/
@@ -14,6 +14,7 @@ body {
 	padding: 0;
 	font-family: $font-stack-sans;
 	font-size: 14px;
+  color: $white;
 }
 
 .wrapper {
@@ -32,6 +33,7 @@ body {
 #image-loader {
 	position: relative;
 	width: 100%;
+  margin-bottom: 10px;
 	overflow: hidden;
 	box-sizing: border-box;
 	background: $black;
@@ -55,8 +57,13 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       font-family: $font-stack-sans;
-      font-size: 60px;
+      font-size: 50px;
+      font-weight: 300;
     }
+    #date {
+      visibility: hidden;
+    }
+
     #time {
       float: right;
 
@@ -68,17 +75,28 @@ body {
     }
     img.logo {
       height: 100px;
-      //margin: -10px 0 0 -10px;
     }
   }
 
   #splash {
-    margin-bottom: 10px;
-    background: url("../images/clab-calendar/splash.jpg") no-repeat center top border-box;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    position: relative;
+    background: url("../images/clab-calendar/splash.jpg") no-repeat center center;
+    box-sizing: padding-box;
+
+    .posts {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      margin: 0px;
+      padding: 2px;
+      background-color: rgba(0,0,0,0.4);
+      color: #FFF;
+      font-family: $font-stack-sans;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 12px;
+      border-radius: 1px;
+    }
   }
 }
 

@@ -25,6 +25,7 @@ jQuery( document ).ready( function($) {
       if (bool) {
         var height = $(window).height() - $("#calendar").height();
         height    -= 2*parseInt($('.wrapper').css('padding-top'));
+        height    -= parseInt( $('#image-loader').css('margin-bottom') );
         set_height( height );
       }
     }
@@ -65,25 +66,21 @@ jQuery( document ).ready( function($) {
 
   function set_height(height) {
     var seconds = 30;
-    var ms = seconds * 1000;
+    var ms = 30 * 1000;
     var refresh_ms = 21600*1000;
     $('#image-loader').css({
       "height": height,
     });
-    /*
-    $("#image-loader").css({
-      "height": height - parseInt($("#calendar").css("margin-bottom")),
-      "margin-bottom": parseInt($("#calendar").css("margin-bottom")),
+    $('#splash').css({
+      'height': height - $('#banner').outerHeight(),
     });
-    $("#splash").css({
-      "height": height - parseInt($("#calendar").css("margin-bottom")) - 118,
-    });*/
 
     var i = 1;
 
     setInterval(function() {
       $("#splash").css({
         "background-image": "url("+basedir+images[i]+")",
+        "background-size": dimensions[i]?"100% auto":"auto 100%",
       });
       if (i == images.length - 1) {
         i = 0;
