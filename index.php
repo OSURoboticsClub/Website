@@ -99,6 +99,41 @@
           <!-- END PROJECTS LINKS -->
         </section>
         <!-- END PROJECTS -->
+        <!-- OFFICERS
+        <div id="meet-the-leaders">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="banner">Meet the Leaders</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ul>
+                <li>
+                  <p><img src="http://osurobotics.club/wp-content/uploads/2015/12/Nick-150x150.jpg"></p>
+                  <p><a href="mailto:mccombn@onid.oregonstate.edu">Nick McComb</a></p>
+                  <p>President</p>
+                </li>
+                <li>
+                  <p><img src="http://osurobotics.club/wp-content/uploads/2015/12/Dylan-150x150.jpg"></p>
+                  <p><a href="mailto:dylanthrush1@gmail.com">Dylan Thrush</a></p>
+                  <p>Vice-President</p>
+                </li>
+                <li>
+                  <img src="http://osurobotics.club/wp-content/uploads/2015/12/Corwin-150x150.jpg"></p>
+                  <p><a href="mailto:caperren@gmail.com">Corwin Perren</a></p>
+                  <p>Treasurer</p>
+                </li>
+                <li>
+                  <p><img src="http://osurobotics.club/wp-content/uploads/2015/12/Billy-150x150.jpg"></p>
+                  <p><a href="mailto:rycoske@gmail.com">Billy Edwards</a></p>
+                  <p>Secretary</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- END OFFICERS -->
       <!-- END INDEX -->
   </div>
   <!-- END CONTENT -->
