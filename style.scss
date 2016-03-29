@@ -496,8 +496,25 @@ footer {
   }
 }
 
+.carousel-inner {
+}
+
 #store {
+  font-family: $font-stack-sans;
   .header {
     text-align: center;
+  }
+
+  table { background-color: rgba(0,0,0,0.3); }
+
+  a { font-weight: bold; }
+
+  #inventory {
+    ul {
+      font-weight: bold;
+    }
+    li {
+      list-style-type: disc;
+    }
   }
 }

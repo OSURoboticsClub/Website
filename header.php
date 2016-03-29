@@ -11,7 +11,6 @@
        $topdir = esc_url( home_url( '/' ) );
        $themedir = get_stylesheet_directory_uri(); ?>
     <title><? echo $title . " | " . get_bloginfo(); ?></title>
-
     <script src="<? echo $themedir ?>/js/jquery.min.js"></script>
     <script src="<? echo $themedir ?>/js/bootstrap.min.js"></script>
     <link href="<? echo $themedir ?>/css/bootstrap.min.css" rel="stylesheet">

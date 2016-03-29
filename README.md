@@ -31,6 +31,7 @@ The OSU Robotics Club website depends on Bootstrap, Fullcalendar, JQuery, Sass, 
 ### Media
 * [Color Palette](https://www.google.com/design/spec/style/color.html#color-color-palette)
 * [Firefox OS Emojis (404 Page)](https://github.com/mozilla/fxemoji)
+* [Glyphicons](http://glyphicons.com/)
 * [Google Fonts Roboto](https://www.google.com/fonts/specimen/Roboto)
 * [Google Fonts Roboto
 Black](https://github.com/OSURoboticsClub/Website/blob/master/fonts/Roboto-Black.ttf)
