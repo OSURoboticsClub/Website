@@ -88,14 +88,18 @@ body {
       bottom: 10px;
       right: 10px;
       margin: 0px;
-      padding: 2px;
-      background-color: rgba(0,0,0,0.4);
+      padding: 6px;
+      background-color: rgba(0,0,0,0.8);
+      border: 1px solid rgba(255,255,255,0.45);
+      border-radius: 6px;
       color: #FFF;
       font-family: $font-stack-sans;
       font-size: 14px;
       font-weight: normal;
       line-height: 12px;
       border-radius: 1px;
+
+      p { margin: 8px 6px; }
     }
   }
 }

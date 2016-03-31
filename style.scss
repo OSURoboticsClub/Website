@@ -496,7 +496,29 @@ footer {
   }
 }
 
-.carousel-inner {
+/* --- */
+#store-splash {
+  position: relative;
+  height: 420px;
+  background: url($splash-img) no-repeat center top local;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+
+  span#credit {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    padding: 2px;
+    background-color: rgba(0,0,0,0.4);
+    color: #FFF;
+    font-family: $font-stack-sans;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 12px;
+    border-radius: 1px;
+  }
 }
 
 #store {

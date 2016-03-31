@@ -7,24 +7,20 @@ get_header(); ?>
         <!-- SPLASH IMAGE -->
         <div class="splash row">
           <div class="col-md-12">
-            <div id="splash">
+            <div id="store-splash">
               <span id="credit">Pictured: Dylan Thrush, Billy Edwards, OSU President Ed Ray, Nick McComb, Matthew Shuman</span>
             </div>
           </div>
         </div>
-          <!-- PAGE TITLE -->
-          <div class="row">
-              <div class="header col-md-12">
-                <p><span>OSU</span> Robotics Club Store</p>
-              </div>
-          </div>
-          <!-- END PAGE TITLE -->
-          <!-- END SPLASH IMAGE -->
-          <!-- POSTS -->
+        <!-- PAGE TITLE -->
         <div class="row">
-          <div class="col-md-12">
-          </div>
+            <div class="header col-md-12">
+              <p><span>OSU</span> Robotics Club Store</p>
+            </div>
         </div>
+        <!-- END PAGE TITLE -->
+        <!-- END SPLASH IMAGE -->
+        <!-- POSTS -->
         <div class="row">
           <div class="col-md-6">
             <h3>About</h3>
@@ -71,16 +67,19 @@ get_header(); ?>
             </table>
           </div>
         </div>
+
         <div id="inventory" class="row">
           <div class="col-md-12">
             <h3>Inventory</h3>
           </div>
           <div class="col-md-6">
+            <h4>What We Carry</h4>
             <p>Here is a generic list of what the OSU Robotics Club Store carries. If you are searching
             for a specific part, please review the PDF <a href="#" target="_blank">here.</a></p>
             <div class="row">
               <div class="col-md-6">
                 <ul>
+                  <li>Arduinos</li>
                   <li>Passive Components</li>
                   <li>Discrete Transistors</li>
                   <li>Logic ICs</li>
@@ -88,7 +87,6 @@ get_header(); ?>
                   <li>Amplifier ICs</li>
                   <li>LEDs</li>
                   <li>Switches</li>
-                  <li>Fuses</li>
                 </ul>
               </div>
               <div class="col-md-6">
@@ -100,6 +98,7 @@ get_header(); ?>
                   <li>Dev Boards</li>
                   <li>Breakout Boards</li>
                   <li>Motor Controllers</li>
+                  <li>Fuses</li>
                 </ul>
               </div>
             </div>
@@ -107,6 +106,7 @@ get_header(); ?>
             it, please fill out the request form.</p>
           </div>
           <div class="col-md-6">
+            <h4>Request Form</h4>
             <? echo do_shortcode( '[contact-form-7 id="219" title="Part Request"]' ); ?>
           </div>
         </div>

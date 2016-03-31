@@ -40,7 +40,7 @@ jQuery( document ).ready( function($) {
 
   Date.prototype.hhmmss = function() {
     var hh = this.getHours();
-    var mm = this.getMonth();
+    var mm = this.getMinutes();
     var ss = this.getSeconds();
 
     if ( hh > 12 )
