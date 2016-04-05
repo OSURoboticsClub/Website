@@ -8,7 +8,7 @@ get_header(); ?>
         <div class="splash row">
           <div class="col-md-12">
             <div id="store-splash">
-              <span id="credit">Pictured: Dylan Thrush, Billy Edwards, OSU President Ed Ray, Nick McComb, Matthew Shuman</span>
+              <span id="credit">Pictured: OSU Robotics Club Store Entrance</span>
             </div>
           </div>
         </div>

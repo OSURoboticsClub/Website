@@ -496,11 +496,11 @@ footer {
   }
 }
 
-/* --- */
+/* Store --- */
 #store-splash {
   position: relative;
-  height: 420px;
-  background: url($splash-img) no-repeat center top local;
+  height: 210px;
+  background: url($store-splash-img) no-repeat center bottom local;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
