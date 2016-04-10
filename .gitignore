@@ -1,7 +1,9 @@
 *.log
 *.map
 .sass-cache*
+*.min.css
 css/*.map
+css/*.min.css
 css/calendar.css
 css/clab-calendar.css
 css/fullcalendar.css

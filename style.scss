@@ -411,8 +411,62 @@ header {
 --------------------------------------------------------------------------------------------------*/
 @import 'scss/footer';
 
+<<<<<<< HEAD
 /* Pages
 --------------------------------------------------------------------------------------------------*/
 @import 'scss/404';
 @import 'scss/about';
 @import 'scss/store';
+=======
+  .number { color: $darkorange; }
+  .text {
+    height: 100%;
+    color: $offwhite;
+  }
+}
+
+/* Store --- */
+#store-splash {
+  position: relative;
+  height: 210px;
+  background: url($store-splash-img) no-repeat center bottom local;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+
+  span#credit {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    padding: 2px;
+    background-color: rgba(0,0,0,0.4);
+    color: #FFF;
+    font-family: $font-stack-sans;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 12px;
+    border-radius: 1px;
+  }
+}
+
+#store {
+  font-family: $font-stack-sans;
+  .header {
+    text-align: center;
+  }
+
+  table { background-color: rgba(0,0,0,0.3); }
+
+  a { font-weight: bold; }
+
+  #inventory {
+    ul {
+      font-weight: bold;
+    }
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+>>>>>>> fff9754f4bdaa4b9c977a0aaa3f65939ba49a179
