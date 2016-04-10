@@ -1,0 +1,27 @@
+// 404.php
+
+#fourohfour {
+  background-color: $black;
+  font-family: $font-stack-title;
+  text-transform: uppercase;
+  text-align: center;
+  font-size:40px;
+
+  .row {
+    height: 60vh;
+    min-height:400px;
+  }
+
+  img { height: 80% }
+
+  p {
+    height: auto;
+    vertical-align: middle;
+  }
+
+  .number { color: $darkorange; }
+  .text {
+    height: 100%;
+    color: $offwhite;
+  }
+}
