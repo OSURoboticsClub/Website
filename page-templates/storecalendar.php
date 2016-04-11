@@ -34,7 +34,7 @@ echo "<script>
     <script src='<?php echo get_stylesheet_directory_uri() ?>/js/moment.min.js'></script>
     <script src='<?php echo get_stylesheet_directory_uri() ?>/js/fullcalendar.min.js'></script>
     <script src='<?php echo get_stylesheet_directory_uri() ?>/js/gcal.js'></script>
-    <script src='<?php echo get_stylesheet_directory_uri() ?>/js/clab-calendar.js'></script>
+    <script src='<?php echo get_stylesheet_directory_uri() ?>/js/store-calendar.js'></script>
   </head>
   <body>
 

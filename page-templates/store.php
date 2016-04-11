@@ -2,6 +2,16 @@
 /**
  * Template Name: Store Page
  */
+
+$lux_state = file_get_contents('http://osurobotics.club/web_scripts/lux.bool');
+$status = "";
+
+if ( $lux_state == "1\n" ) {
+  $status = "<span style='color: #00E676;'>open</span>";
+} else {
+  $status = "<span style='color: #E53935;'>closed</span>";
+}
+
 get_header(); ?>
       <div id="store" class="content container">
         <!-- SPLASH IMAGE -->
@@ -41,7 +51,7 @@ get_header(); ?>
               <tbody>
                 <tr>
                   <td>Monday</td>
-                  <td>tba</td>
+                  <td><? echo $status; ?></td>
                 </tr>
                 <tr>
                   <td>Tuesday</td>

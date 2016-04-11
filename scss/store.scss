@@ -1,7 +1,7 @@
 #store-splash {
   position: relative;
   height: 420px;
-  background: url($splash-img) no-repeat center top local;
+  background: url($store-splash-img) no-repeat center top local;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -39,4 +39,8 @@
       list-style-type: disc;
     }
   }
+}
+
+@media (max-width: $screen-sm-min) {
+  #store-splash { display: none; }
 }

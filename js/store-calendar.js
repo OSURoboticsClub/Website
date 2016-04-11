@@ -10,7 +10,7 @@ jQuery( document ).ready( function($) {
     minTime: "08:00:00",
     googleCalendarApiKey: 'AIzaSyAmTElrUEA8l4HcvG-Nup46_Oq1uhbsSYE',
     // US Holidays
-    events: 'b8ths75dtv3jnkjja6ijq28jl8@group.calendar.google.com',
+    events: 'gcuk170k49l5sd84fc72r15b7s@group.calendar.google.com',
 
 
     eventClick: function(event) {
