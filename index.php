@@ -13,6 +13,7 @@
           </div>
         </div>
       </div>
+      <!-- END SPLASH IMAGE -->
         <!-- PAGE TITLE -->
         <div class="row">
             <div class="header col-md-12">
@@ -20,7 +21,6 @@
             </div>
         </div>
         <!-- END PAGE TITLE -->
-        <!-- END SPLASH IMAGE -->
         <!-- POSTS -->
         <div class="row">
           <div class="posts col-md-12">
@@ -35,6 +35,13 @@
                 }
               endwhile;
             ?>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="widget-area">
+              <?php dynamic_sidebar( 'sidebar-1' ); ?>
+            </div><!-- .widget-area -->
           </div>
         </div>
         <!-- END POSTS -->

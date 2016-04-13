@@ -7,7 +7,7 @@ function wpb_widgets_init() {
 
 	register_sidebar( array(
 		'name' => __( 'Home Page Intro Widget', 'wpb' ),
-		'id' => 'home-page-intro',
+		'id' => 'sidebar-1',
 		'description' => __( 'This is the Home page intro widget', 'wpb' ),
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
