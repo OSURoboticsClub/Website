@@ -244,6 +244,10 @@ header {
   }
 }
 
+@media (max-width: $screen-sm-min) {
+  .navbar { border-top: 4px solid $darkorange !important; }
+}
+
 /* Content
 --------------------------------------------------------------------------------------------------*/
 #content {
