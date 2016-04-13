@@ -17,7 +17,8 @@
         <!-- PAGE TITLE -->
         <div class="row">
             <div class="header col-md-12">
-              <p><span>Welcome</span> to the OSU Robotics Club Website!</p>
+              <span class="welcome">Welcome</span>
+              <span class="to"> to the OSU Robotics Club Website!</span>
             </div>
         </div>
         <!-- END PAGE TITLE -->
