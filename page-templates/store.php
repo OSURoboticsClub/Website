@@ -4,16 +4,21 @@
  */
 
 $lux_state = file_get_contents('http://osurobotics.club/web_scripts/lux.bool');
-$status = "";
+$lux = "";
 
 if ( $lux_state == "1\n" ) {
-  $status = "<span style='color: #00E676;'>open</span>";
+  $lux = "<div id='lux' class='col-md-12 open'>open</span>";
 } else {
-  $status = "<span style='color: #E53935;'>closed</span>";
+  $lux = "<div id='lux' class='col-md-12 closed'>closed</span>";
 }
 
 get_header(); ?>
       <div id="store" class="content container">
+        <!-- IoT Light Sensor -->
+        <div class="row">
+            <? echo $lux; ?>
+          </div>
+        </div>
         <!-- SPLASH IMAGE -->
         <div class="splash row">
           <div class="col-md-12">
@@ -41,40 +46,7 @@ get_header(); ?>
           </div>
           <div class="col-md-6">
             <h3>Hours</h3>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Day</th>
-                  <th>Hours</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Monday</td>
-                  <td><? echo $status; ?></td>
-                </tr>
-                <tr>
-                  <td>Tuesday</td>
-                  <td>tba</td>
-                </tr>
-                <tr>
-                  <td>Wednesday</td>
-                  <td>tba</td>
-                </tr>
-                <tr>
-                  <td>Thursday</td>
-                  <td>tba</td>
-                </tr>
-                <tr>
-                  <td>Friday</td>
-                  <td>tba</td>
-                </tr>
-                <tr>
-                  <td>Saturday &ndash; Sunday</td>
-                  <td>tba</td>
-                </tr>
-              </tbody>
-            </table>
+            <div id="calendar"></div>
           </div>
         </div>
 
@@ -83,9 +55,13 @@ get_header(); ?>
             <h3>Inventory</h3>
           </div>
           <div class="col-md-6">
+            <h4>Request Parts</h4>
+            <p>If you cannot find the part you are looking for and would like to suggest that we carry
+            it, please fill out the request form.</p>
+            <br>
             <h4>What We Carry</h4>
-            <p>Here is a generic list of what the OSU Robotics Club Store carries. If you are searching
-            for a specific part, please review the PDF <a href="#" target="_blank">here.</a></p>
+            <!--<p>Here is a generic list of what the OSU Robotics Club Store carries.If you are searching
+            for a specific part, please review the PDF <a href="#" target="_blank">here.</a></p>-->
             <div class="row">
               <div class="col-md-6">
                 <ul>
@@ -112,8 +88,6 @@ get_header(); ?>
                 </ul>
               </div>
             </div>
-            <p>If you cannot find the part you are looking for and would like to suggest that we carry
-            it, please fill out the request form.</p>
           </div>
           <div class="col-md-6">
             <h4>Request Form</h4>

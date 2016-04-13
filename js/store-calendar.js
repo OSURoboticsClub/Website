@@ -12,6 +12,9 @@ jQuery( document ).ready( function($) {
     // US Holidays
     events: 'gcuk170k49l5sd84fc72r15b7s@group.calendar.google.com',
 
+    // Extra stuff
+    allDaySlot: false,
+    hiddenDays: [ 0 ],
 
     eventClick: function(event) {
       // opens events in a popup window
