@@ -21,54 +21,101 @@ get_header(); ?>
           </div>
         <!--</div>
         <div style="padding-top: 10px" class="row">-->
-          <div class="col-md-6">
+          <div id="elected-officers" class="col-md-6">
             <ul>
               <li>
                 <p><img src="<? echo $img . "nick.jpg" ?>"></p>
                 <p><a href="mailto:mccombn@oregonstate.edu">Nick McComb</a></p>
                 <p>President</p>
-              </li>
-              <li>
+              </li><!--
+           --><li>
                 <p><img src="<? echo $img . "dylan.jpg" ?>"></p>
                 <p><a href="mailto:dylanthrush1@gmail.com">Dylan Thrush</a></p>
                 <p>Vice-President</p>
-              </li>
-              <li>
+              </li><!--
+           --><li>
                 <img src="<? echo $img . "corwin.jpg" ?>"></p>
                 <p><a href="mailto:caperren@gmail.com">Corwin Perren</a></p>
                 <p>Treasurer</p>
               </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Project Team Leadership</h3>
+          </div>
+        </div>
+        <div id="team-leads" class="row">
+          <div class="col-md-6">
+            <p>These are the people who... </p>
+            <br>
+          </div>
+          <div class="col-md-6">
+            <ul>
               <li>
                 <p><img src="<? echo $img . "billy.jpg" ?>"></p>
                 <p><a href="mailto:edwardwi@oregonstate.edu">Billy Edwards</a></p>
-                <p>Rover Team Lead</p>
+                <p>Mars Rover Lead</p>
               </li><!--
-              <li>
+           --><li>
                 <p><img src="<? echo $img . "evan.png" ?>"></p>
                 <p><a href="mailto:gonnerme@oregonstate.edu">Evan Gonnerman</a></p>
-                <p>Aerial Team Lead</p>
-              </li>
-              <li>
+                <p>Aerial Lead</p>
+              </li><!--
+           --><li>
                 <p><img src="<? echo $img . "daniel.png" ?>"></p>
                 <p><a href="mailto:knottd@oregonstate.edu">Daniel Knott</a></p>
-                <p>Underwater Team Lead</p>
+                <p>Underwater Lead</p>
               </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Appointed Officers</h3>
+          </div>
+        </div>
+        <div id="appointed-officers" class="row">
+          <div class="col-md-12">
+            <ul>
               <li>
                 <p><img src="<? echo $img . "griffin.png" ?>"></p>
                 <p><a href="mailto:cervag@oregonstate.edu">Griffin Cerva</a></p>
                 <p>3D Printing</p>
-              </li>
-              <li>
+              </li><!--
+           --><li>
                 <p><img src="<? echo $img . "ryan.png" ?>"></p>
                 <p><a href="mailto:domresr@oregonstate.edu">Ryan Domres</a></p>
                 <p>Hardware Developer</p>
-              </li>
-              <li>
+              </li><!--
+           --><li>
                 <p><img src="<? echo $img . "jason.png" ?>"></p>
                 <p><a href="#">Jason Lemieux</a></p>
                 <p>Club Accountant</p>
-              </li>-->
+              </li><!--
+           --><li>
+                <p><img src="<? echo $img . "jennifer.jpg" ?>"></p>
+                <p><a href="mailto:jlplynne@gmail.com">Jennifer</a></p>
+                <p>FLL Manager</p>
+              </li><!--
+           --><li>
+                <p><img src="<? echo $img . "arduino.jpg" ?>"></p>
+                <p><a href="mailto:audrina1313@gmail.com">Audrina Hahn</a></p>
+                <p>FTC Manager</p>
+              </li><!--
+           --><li>
+                <p><img src="<? echo $img . "jonathan.jpg" ?>"></p>
+                <p><a href="mailto:nutterj@oregonstate.edu">Jonathan Nutter</a></p>
+                <p>FRC Manager</p>
+              </li><!--
+           --><li>
+                <p><img src="<? echo $img . "harlan.jpg" ?>"></p>
+                <p><a href="mailto:waldroha@oregonstate.edu">Harlan James</a></p>
+                <p>Web Developer</p>
+              </li>
             </ul>
+            <br>
           </div>
         </div>
       </div>

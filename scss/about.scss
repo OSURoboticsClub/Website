@@ -1,5 +1,8 @@
 #about {
-  img { border: 1px solid #FFF; }
+  img {
+    width: 100%;
+    border: 1px solid #FFF;
+  }
 
   p { margin-bottom: 2px; }
 
@@ -7,6 +10,25 @@
 
   li {
     display: inline-block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 5px;
+    letter-spacing: 0px;
+  }
+}
+
+/** 
+ * width: floor( 100 / n_officers )
+ */
+@media (min-width: $screen-md-min) {
+  #about {
+    #elected-officers li,
+    #team-leads       li {
+      width: 33%;
+    }
+    #appointed-officers li {
+      width: 14%;
+    }
   }
 }
