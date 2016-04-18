@@ -48,7 +48,11 @@ get_header(); ?>
         </div>
         <div id="team-leads" class="row">
           <div class="col-md-6">
-            <p>These are the people who... </p>
+            <p>These are the people who manage our large scale "project teams" within the club. These
+              teams range in mission from building underwater ROVs to aerial vehicles. These particular
+              OSURC members are the best people to contact for general interest in their projects, as
+              they would all be happy to share information about their teams. For more information
+              about the teams, please navigate to their project pages above.</p>
             <br>
           </div>
           <div class="col-md-6">
