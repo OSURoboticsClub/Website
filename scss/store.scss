@@ -26,7 +26,16 @@
 #store {
   font-family: $font-stack-sans;
 
-  #lux { display: none; }
+  #lux {
+    display: block !important;
+    font-family: $font-stack-title;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .open   { background-color: #00C853; }
+  .closed { background-color: #E53935; }
 
   .header { text-align: center; }
 
@@ -39,17 +48,20 @@
   }
 }
 
-@media (max-width: $screen-sm-min) {
-  #store-splash { display: none; }
+/* TODO: Change this to something not stupid */
+@media ( min-width: 761px ) {
   #lux {
-    display: block !important;
-    font-family: $font-stack-title;
-    font-weight: bold;
-    padding-top: 2px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
+    z-index: 20;
+    background-clip: content-box;
+    padding-top: 0px;
+    box-shadow: 0px 3px 1px rgba(0,0,0,0.1);
   }
-  .open   { background-color: #00E676; }
-  .closed { background-color: #E53935; }
+}
+
+@media (max-width: $screen-sm-min) {
+  #lux {
+    background-clip: border-box;
+    padding-top: 2px;
+  }
+  #store-splash { display: none; }
 }

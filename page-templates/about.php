@@ -63,8 +63,8 @@ get_header(); ?>
                 <p>Mars Rover Lead</p>
               </li><!--
            --><li>
-                <p><img src="<? echo $img . "evan.png" ?>"></p>
-                <p><a href="mailto:gonnerme@oregonstate.edu">Evan Gonnerman</a></p>
+                <p><img src="<? echo $img . "noavatar.jpg" ?>"></p>
+                <p><a href="mailto:hiebl@oregonstate.edu">Levi Hieb</a></p>
                 <p>Aerial Lead</p>
               </li><!--
            --><li>
