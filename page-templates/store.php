@@ -7,17 +7,16 @@ $lux_state = file_get_contents('http://osurobotics.club/web_scripts/lux.bool');
 $lux = "";
 
 if ( $lux_state == "1\n" ) {
-  $lux = "<div id='lux' class='col-md-12 open'>open</span>";
+  $lux = "<span id='lux' class='col-md-12 open'>open</span>";
 } else {
-  $lux = "<div id='lux' class='col-md-12 closed'>closed</span>";
+  $lux = "<span id='lux' class='col-md-12 closed'>closed</span>";
 }
 
 get_header(); ?>
       <div id="store" class="content container">
         <!-- IoT Light Sensor -->
         <div class="row">
-            <? echo $lux; ?>
-          </div>
+          <? echo $lux; ?>
         </div>
         <!-- SPLASH IMAGE -->
         <div class="splash row">
